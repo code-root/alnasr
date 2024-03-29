@@ -38,29 +38,29 @@
                 <source src="https://allnasr.com/assets/vvvv.mp4" type="video/mp4">
             </video>
         </div>
+
+        
         <div class="container">
           <div class="row">
             <div class="col-xl-1"></div>
             <div class="col-xl-10 col-lg-12">
               <div class="banner">
                 <div class="row align-items-end">
-                  <div class="col-lg-6 pt-100"><span class="text-sm-bold color-gray-600 wow animate__animated animate__fadeInUp">Hello Everyone!</span>
-                    <h1 class="color-gray-50 mt-20 mb-20 wow animate__animated animate__fadeInUp">alnasr<a class="typewrite color-linear" href="#" data-period="3000" data-type="[ &quot;Originality&quot;, &quot;Innovation&quot;, &quot;Dedication&quot; ]"></a></h1>
+                  <div class="col-lg-6 pt-100">
+                    {{-- <span class="text-sm-bold color-gray-600 wow animate__animated animate__fadeInUp">Hello Everyone!</span> --}}
+                    <h1 class="color-gray-50 mt-20 mb-20 wow animate__animated animate__fadeInUp">IS IT<a class="typewrite color-linear" href="#" data-period="3000" data-type="[ &quot;graphic designe&quot;, &quot;Motion 3D&quot;, &quot;Montage&quot; , &quot;programmers&quot;  , &quot;motion graphic&quot; ]"></a></h1>
                     <div class="row">
                       <div class="col-lg-12">
-                        <ul class="list-unstyled text-left ">
-                            <li class="point_home"><i class="far fa-gem check-icon text-success"></i> Transforming ideas into visually captivating realities.</li>
-                            <li class="point_home"><i class="far fa-lightbulb check-icon text-warning"></i> Elevating your brand's identity with innovative designs tailored to your needs.</li>
-                            <li class="point_home"><i class="fas fa-paint-brush check-icon text-info"></i> Delivering striking logos and captivating marketing materials.</li>
-                            <li class="point_home"><i class="fas fa-users check-icon text-primary"></i> Dedicated team offering top-notch, creative solutions.</li>
-                            <li class="point_home"><i class="far fa-star check-icon text-danger"></i> Experience the exceptional power of design to bring your vision to life!</li>
-                        </ul>
+                        <h3 class="color-gray-50">You're looking F o r ?</h3>
+                    <h6 class="color-linear d-inline-block mb-30">
+                      Welcome to Al-Nasr Company, where creativity is our language and design is our passion
+                    </h6>
                       </div>
                     </div>
 
                   </div>
                   <div class="col-lg-6 text-center">
-                    <div class="banner-img position-relative wow animate__animated animate__fadeIn"><img  src="{{asset('assets')}}/home/image/r.png" alt="al-nasr">
+                    <div class="banner-img position-relative wow animate__animated animate__fadeIn"><img  src="{{asset('assets')}}/home/post_24048560428620.png" alt="al-nasr">
                       {{-- <div class="pattern-1"><img src="{{asset('assets')}}/home/image/logo-34-35.png" style="width: 11%; " alt="al-nasr"></div> --}}
                       {{-- <div class="pattern-2"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"  style="width: 11%; "></div> --}}
                       {{-- <div class="pattern-3"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"></div> --}}
@@ -126,9 +126,12 @@
                 @if($item['image'][0]['status'] !='video'  )
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
                     <div class="card-style-2 hover-up hover-neon wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
-                        <div class="card-image">
-                                <a href="/{{ $item['image'][0]['status'] }}"><img src="/{{ $item['image'][0]['url'] }}" alt="{{ $item->name }}"></a>
-                        </div><div class="card-info"><a class="color-gray-500" href="/s/{{ $item->name ?? '' }}"> {{ $item->name }}</a></div>
+                        {{-- <div > --}}
+                                {{-- <a href="/{{ $item['image'][0]['status'] }}">
+                                  <img src="/{{ $item['image'][0]['url'] }}" alt="{{ $item->name }}"
+                                  ></a> --}}
+                        {{-- </div> --}}
+                        <div><a class="color-gray-500" href="/s/{{ $item->name ?? '' }}"> {{ $item->name }}</a></div>
                     </div>
                   </div>
                   @endif

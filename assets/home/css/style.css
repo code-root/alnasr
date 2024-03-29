@@ -1677,14 +1677,16 @@ input {
 }
 
 .card-style-2 {
-  border-width: 1px;
+  font-family: 'Montserrat Alternates';
+  border-width: 0px;
   border-style: solid;
-  padding: 19px;
+  padding: 29px;
   position: relative;
   display: flex;
-  border-radius: 16px;
+  border-radius: 22px;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 .card-style-2 .card-image {
   width: 32px;
@@ -2152,7 +2154,7 @@ input {
   justify-content: space-between;
   position: relative;
   width: 100%;
-  padding: 5px 0px;
+  padding: 0px 0px;
 }
 .header .main-header .header-logo {
   /* max-width: 150px;
@@ -2316,15 +2318,15 @@ input {
   margin: 5px 0;
 }
 .header .main-menu li a {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 29px;
-    display: block;
-    padding: 0px 35px;
-    text-decoration: none;
-    position: relative;
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  line-height: 1px;
+  display: block;
+  position: relative;
+  left: 15%;
+  font-size: 20px;
+  padding: 39px;
+  font-weight: 600;
 }
 .header .main-menu li a:hover, .header .main-menu li a.active {
   color: #1CC2E7;

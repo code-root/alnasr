@@ -51,7 +51,7 @@
       <div class="footer-1 bg-gray-850 border-gray-800">
         <div class="row">
           <div class="col-lg-4 mb-30">
-              <img class="logo-night" src="{{asset('assets')}}/home/image/3lama.png"  alt="al-nasr" style=" width: 80%;">
+              <img  src="{{asset('assets')}}/home/image/3lama.png"  alt="al-nasr" style="width: 80% !important;">
           </div>
           <div class="col-lg-4 mb-30">
             <h6 class="text-lg mb-30 color-white wow animate__animated animate__fadeInUp">Categories</h6>

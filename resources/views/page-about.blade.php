@@ -12,19 +12,20 @@
                 <div class="text-center mt-70">
                     <h1 class="color-linear d-inline-block mb-30">About</h1>
                     <p class="text-xl color-gray-500">
-                        🚀 The vision of Al-Nasr Company is to be a <span style="color: #ff7f50;">leading and authoritative entity</span> in the field of <span style="color: #6495ed;">graphic design</span>, encompassing <span style="color: #32cd32;">social media design</span>, <span style="color: #ff1493;">motion graphics</span>, various forms of <span style="color: #ff6347;">montage</span>, <span style="color: #800080;">website</span>, and <span style="color: #4169e1;">system development</span>.
-                        <br><br>
-                        🌟 We are a team of seasoned creatives and developers offering <span style="color: #ff8c00;">high-quality and innovative services</span> tailored to meet our clients' needs. We aspire to be an <span style="color: #228b22;">effective partner</span> in their success across <span style="color: #ff4500;">social media platforms</span>.
-                        <br><br>
-                        🎨 Al-Nasr Company's objectives manifest in providing <span style="color: #9932cc;">innovative and compelling social media designs</span> that reflect our clients' identities and captivate the intended audience, thereby enhancing their <span style="color: #4682b4;">engagement</span> with our published content.
-                        <br><br>
-                        🎬 We are committed to crafting <span style="color: #8a2be2;">inventive and distinctive motion graphics content</span> that aids our clients in effectively and engagingly conveying their messages, thereby amplifying audience interaction. Furthermore, we deliver <span style="color: #dc143c;">high-quality and professional montage services</span>, aiming to transform video clips into refined and impactful artistic works.
-                        <br><br>
-                        📊 We provide specialized consultations in <span style="color: #ffa500;">social media design</span>, aiming to assist our clients in achieving their goals and increasing audience awareness of their brand. We consistently strive to leverage the <span style="color: #008000;">latest tools and technologies</span> in <span style="color: #20b2aa;">design</span>, <span style="color: #800000;">montage</span>, <span style="color: #2e8b57;">3D</span>, and <span style="color: #9932cc;">motion graphics</span>.
-                        <br><br>
-                        🌐 Additionally, we offer detailed <span style="color: #ff69b4;">3D services</span> that intricately explain your business domain. We are a <span style="color: #4169e1;">dedicated and enthusiastic team</span> working diligently to achieve the client's vision and bolster their activity, ensuring their attainment of optimal results and success.
+                      Al-Nasr Company’s vision is to be a leading and accredited entity in the field of design, montage, and electronic websites.
                     </p>
                 </div>
+                <div class="text-center mt-70">
+                  <h3 class="color-linear d-inline-block mb-30">Vision</h3>
+                  <p class="text-xl color-gray-500">
+                    To empower individuals and businesses worldwide by providing intuitive and accessible design and programming solutions, enabling them to bring their ideas to life and thrive in the digital landscape.
+                  </p>
+              </div>
+              <div class="text-center mt-70">
+                <h4 class="color-linear d-inline-block mb-30">Mission</h4>
+                <p class="text-xl color-gray-500">
+                  Our mission is to simplify the process of designing and programming by offering a comprehensive range of services tailored to meet the diverse needs of our clients. Through user-friendly platforms, innovative tools, and expert guidance                </p>
+            </div>
             </div>
 
             <div  id="Projects" class="text-center mt-70 mb-50">

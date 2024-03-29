@@ -22,7 +22,7 @@
 
 
     <script src="https://wp.alithemes.com/html/genz/demos/assets/js/vendors/jquery-3.6.0.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <style>
     .shape {
@@ -42,4 +42,16 @@
         top: 0% !important;
       }
       }
+
+      .logo-night {
+    width: 100%;
+    height: 84px; /* افتراضي لحالة الديسكتوب */
+}
+
+@media screen and (max-width: 767px) {
+    /* هذا سينفذ فقط عندما تكون الشاشة أصغر من 767 بكسل (حالة الجوال) */
+    .logo-night {
+        height: 67px;
+    }
+}
 </style>
