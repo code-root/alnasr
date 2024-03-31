@@ -43,7 +43,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-1"></div>
-            <div class="col-xl-10 col-lg-12">
+            <div class="col-xl-12 col-lg-12">
               <div class="banner">
                 <div class="row align-items-end">
                   <div class="col-lg-6 pt-100">
@@ -116,8 +116,19 @@
                   </div>
                 </div>
               </div>
+          
+         
 
-            <h2 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp">WHAT WE DO</h2>
+
+            </div>
+        </div>
+      </div>
+
+
+            <img src="{{asset('assets')}}/home/841502.jpg" alt="" style="position: absolute;5%;top: 45%;">
+            <div class="container">
+
+            <h2 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="position: relative; ">WHAT WE DO</h2>
             {{-- <p class="text-lg color-gray-500 wow animate__animated animate__fadeInUp">Most requested services</p> --}}
             <div class="row mt-70 mb-50">
                 @isset($subCategory)
@@ -125,12 +136,8 @@
                 @isset($item['image'][0]['url'])
                 @if($item['image'][0]['status'] !='video'  )
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
-                    <div class="card-style-2 hover-up hover-neon wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
-                        {{-- <div > --}}
-                                {{-- <a href="/{{ $item['image'][0]['status'] }}">
-                                  <img src="/{{ $item['image'][0]['url'] }}" alt="{{ $item->name }}"
-                                  ></a> --}}
-                        {{-- </div> --}}
+                    <div class="card-style-2 hover-up hover-neon wow animate__animated animate__fadeIn" data-wow-delay="0.9s" style="background: #335d5754;backdrop-fil;backdrop-filter: blur(40px);visible;">
+         
                         <div><a class="color-gray-500" href="/s/{{ $item->name ?? '' }}"> {{ $item->name }}</a></div>
                     </div>
                   </div>
@@ -140,12 +147,8 @@
                 @endisset
             </div>
 
-
-            </div>
-
-
-              <h2 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp">Our best work in videos</h2>
-              <p class="text-lg color-gray-500 wow animate__animated animate__fadeInUp">Our best work is in videos made for clients</p>
+              <h2 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="position: relative;">SOME VIDEOS</h2>
+              {{-- <p class="text-lg color-gray-500 wow animate__animated animate__fadeInUp" style="position: relative;">Our best work is in videos made for clients</p> --}}
 
                 <div class="row mt-70">
                     @isset($projects)
@@ -181,7 +184,7 @@
 
                 @isset($latestOurTeamMembers)
               <div class="text-center mt-70 mb-50">
-                <h2 class="color-linear d-inline-block mb-10 wow animate__ animate__fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">MEET US</h2>
+                <h2 class="color-linear d-inline-block mb-10 wow animate__ animate__fadeInUp animated" style="position: relative;visibility: visible;animation-name: fadeInUp;">MEET US</h2>
             </div>
             <div class="box-testimonials mb-150 animate__fadeIn mb-100">
                 <div class="box-swiper">
@@ -215,7 +218,7 @@
 
               <div class="row align-items-end mt-30">
                 <div class="col-lg-9 wow animate__animated animate__fadeIn">
-                  <h3 class="color-linear">PARTNERS</h3>
+                  <h3 class="color-linear" style="position: relative;">PARTNERS</h3>
                 </div>
                 <div class="col-lg-3 text-lg-end mt-15 hover-up wow animate__animated animate__fadeIn" data-wow-delay="0.2s"><a class="link-brand-1" href="#">Learn More</a></div>
               </div>

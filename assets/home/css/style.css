@@ -1687,6 +1687,7 @@ input {
   align-items: center;
   margin-bottom: 20px;
   font-weight: 700;
+  backdrop-filter: blur(10px);
 }
 .card-style-2 .card-image {
   width: 32px;
@@ -1888,8 +1889,7 @@ input {
   max-width: 250px;
   animation-name: spin;
   animation-duration: 1000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-iteration-count: revert-layer;
 }
 
 @keyframes spin {

@@ -25,11 +25,14 @@
 @endif
 
                 <h1 class="color-linear d-inline-block mb-30">Contact Us</h1>
-                <p class="text-xl color-gray-500">We are Victory, a creative and dedicated team passionate about web development nearly as much as we cherish our clients. We are an impassioned team with a mission to achieve perfection in web design. Every design is crafted with love, aiming for pixel-perfect precision and excellent coding quality. Speed, security, and SEO-friendliness are always at the forefront of our minds.</p>
+                <p class="text-xl color-gray-500">
+                We are Victory, a creative and dedicated team passionate about web development nearly as
+                much as we cherish our clients. We are an impassioned team with a mission to achieve perfection in web design.
+                </p>
             </div>
-            <div class="text-center mt-30">
+            {{-- <div class="text-center mt-30">
               <div class="d-inline-block support text-start">+201006156944<br></div>
-            </div>
+            </div> --}}
             @if(!session('success'))
             <form method="POST" action="{{ route('contact.store') }}">
                 @csrf
