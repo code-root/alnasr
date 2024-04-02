@@ -24,8 +24,15 @@
     </div>
 @endif
 
-                <h1 class="color-linear d-inline-block mb-30">Contact Us</h1>
-                <p class="text-xl color-gray-500">
+</div>
+</div>
+</div>
+</div>
+<img src="{{asset('assets')}}/home/us-1.jpg" alt="us-1" style="right: 0px;/* float: unset; */position: absolute;width: 100%;height: 48%;">
+<div class="container">
+    <div class="row">
+                <h1 class="color-linear d-inline-block mb-30" style="text-align: center;position: relative;">Contact Us</h1>
+                <p class="text-xl color-gray-500" style="position: relative;">
                 We are Victory, a creative and dedicated team passionate about web development nearly as
                 much as we cherish our clients. We are an impassioned team with a mission to achieve perfection in web design.
                 </p>
@@ -36,30 +43,31 @@
             @if(!session('success'))
             <form method="POST" action="{{ route('contact.store') }}">
                 @csrf
+
                 <div class="form-contact">
                     <div class="row mt-50">
                         <div class="col-lg-6">
-                            <div class="form-group">
+                            <div class="form-group" style="position: relative;">
                                 <input name="name" class="form-control bg-gray-850 border-gray-800 color-gray-500" type="text" placeholder="Your name *">
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="form-group">
+                            <div class="form-group" style="position: relative;">
                                 <input name="email" class="form-control bg-gray-850 border-gray-800 color-gray-500" type="text" placeholder="Email *">
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="form-group">
+                            <div class="form-group" style="position: relative;">
                                 <input name="phone" class="form-control bg-gray-850 border-gray-800 color-gray-500" type="text" placeholder="Phone number *">
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="form-group">
+                            <div class="form-group" style="position: relative;">
                                 <input name="subject" class="form-control bg-gray-850 border-gray-800 color-gray-500" type="text" placeholder="Subject *">
                             </div>
                         </div>
                         <div class="col-lg-12">
-                            <div class="form-group">
+                            <div class="form-group" style="position: relative;">
                                 <textarea name="message" class="form-control bg-gray-850 border-gray-800 color-gray-500" rows="5" placeholder="Message *"></textarea>
                             </div>
                         </div>

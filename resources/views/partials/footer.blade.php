@@ -150,14 +150,14 @@
   <script src="{{asset('assets')}}/main.js?v=2.0"></script>
 
  <script>
-     setTimeout(function () {
-        $("#preloader-active").fadeOut("slow");
-    }, 1000);
-        function changeValueAndOpenModal(serviceId) {
-    $('#service_id').val(serviceId); // تغيير قيمة الحقل service_id
-    $('#staticBackdrop').modal('show'); // فتح نافذة العرض المنبثقة
-    console.log(serviceId);
-   }
+      setTimeout(function () {
+          $("#preloader-active").fadeOut("slow");
+      }, 4000);
+          function changeValueAndOpenModal(serviceId) {
+      $('#service_id').val(serviceId); // تغيير قيمة الحقل service_id
+      $('#staticBackdrop').modal('show'); // فتح نافذة العرض المنبثقة
+      console.log(serviceId);
+    }
 
 $(document).ready(function() {
 

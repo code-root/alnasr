@@ -48,10 +48,10 @@
                 <div class="row align-items-end">
                   <div class="col-lg-6 pt-100">
                     {{-- <span class="text-sm-bold color-gray-600 wow animate__animated animate__fadeInUp">Hello Everyone!</span> --}}
-                    <h1 class="color-gray-50 mt-20 mb-20 wow animate__animated animate__fadeInUp">IS IT<a class="typewrite color-linear" href="#" data-period="3000" data-type="[ &quot;graphic designe&quot;, &quot;Motion 3D&quot;, &quot;Montage&quot; , &quot;programmers&quot;  , &quot;motion graphic&quot; ]"></a></h1>
+                    <h3 class="color-gray-50 mt-20 mb-20 wow animate__animated animate__fadeInUp">IS IT<a class="typewrite color-linear" href="#" data-period="3000" data-type="[ &quot;graphic designe&quot;, &quot;Motion 3D&quot;, &quot;Montage&quot; , &quot;programmers&quot;  , &quot;motion graphic&quot; ]"></a></h3>
                     <div class="row">
                       <div class="col-lg-12">
-                        <h3 class="color-gray-50">You're looking F o r ?</h3>
+                        <h4 class="color-gray-50">You're looking F o r ?</h4>
                     <h6 class="color-linear d-inline-block mb-30">
                       Welcome to Al-Nasr Company, where creativity is our language and design is our passion
                     </h6>
@@ -59,14 +59,15 @@
                     </div>
 
                   </div>
-                  <div class="col-lg-6 text-center">
+                   {{--  <div class="col-lg-6 text-center">
                     <div class="banner-img position-relative wow animate__animated animate__fadeIn"><img  src="{{asset('assets')}}/home/post_24048560428620.png" alt="al-nasr">
-                      {{-- <div class="pattern-1"><img src="{{asset('assets')}}/home/image/logo-34-35.png" style="width: 11%; " alt="al-nasr"></div> --}}
-                      {{-- <div class="pattern-2"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"  style="width: 11%; "></div> --}}
-                      {{-- <div class="pattern-3"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"></div> --}}
-                      {{-- <div class="pattern-4"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"></div> --}}
+                     <div class="pattern-1"><img src="{{asset('assets')}}/home/image/logo-34-35.png" style="width: 11%; " alt="al-nasr"></div> 
+                     <div class="pattern-2"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"  style="width: 11%; "></div>
+                      <div class="pattern-3"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"></div>
+                    <div class="pattern-4"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"></div>
                     </div>
                   </div>
+                  --}}
                 </div>
               </div>
               <div class="mb-70">
@@ -125,7 +126,7 @@
       </div>
 
 
-            <img src="{{asset('assets')}}/home/841502.jpg" alt="" style="position: absolute;5%;top: 45%;">
+            <img src="{{asset('assets')}}/home/841502.jpg" alt="" style="position: absolute;5%;top: 40%;">
             <div class="container">
 
             <h2 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="position: relative; ">WHAT WE DO</h2>
@@ -136,7 +137,7 @@
                 @isset($item['image'][0]['url'])
                 @if($item['image'][0]['status'] !='video'  )
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
-                    <div class="card-style-2 hover-up hover-neon wow animate__animated animate__fadeIn" data-wow-delay="0.9s" style="background: #335d5754;backdrop-fil;backdrop-filter: blur(40px);visible;">
+                    <div class="card-style-2 hover-up hover-neon wow animate__animated animate__fadeIn" data-wow-delay="0.9s" style="background: rgb(148 182 177 / 42%);backdrop-filter: blur(7px);">
          
                         <div><a class="color-gray-500" href="/s/{{ $item->name ?? '' }}"> {{ $item->name }}</a></div>
                     </div>

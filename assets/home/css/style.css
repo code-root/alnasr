@@ -152,7 +152,8 @@ input,
 select,
 button,
 textarea {
-  font-family: "Montserrat Alternates", sans-serif;
+   font-family: 'Gilroy-Bold', sans-serif;
+
   font-size: 14px;
 }
 
@@ -390,88 +391,100 @@ a:hover {
 }
 
 body {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Gilroy-Bold', sans-serif;
 }
 
 .text-head-2 {
   font-size: 42px;
   line-height: 44px;
   font-weight: bold;
-  font-family: "Montserrat Alternates", sans-serif;
+   font-family: 'Gilroy-Bold', sans-serif;
+
 }
 
 .text-heading-4 {
   color: #ffffff;
   font-size: 28px;
   line-height: 32px;
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
 }
 
 .text-base {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
 .text-3xl {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
 }
 
 .text-2xl {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
 }
 
 .text-xl {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 }
 
 .text-lg {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
 }
 
 .text-md {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-size: 16px !important;
   line-height: 22px !important;
   font-weight: 400;
 }
 
 .text-sm {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-size: 14px !important;
   line-height: 20px !important;
   font-weight: 400;
 }
 
 .text-sm-bold {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-size: 14px !important;
   line-height: 20px !important;
   font-weight: 700;
 }
 
 .text-xs {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 400;
   font-size: 12px !important;
   line-height: 16px !important;
 }
 
 h1 {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 800;
   font-size: 64px;
   line-height: 87px;
@@ -479,7 +492,8 @@ h1 {
 }
 
 h2 {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 700;
   font-size: 45px;
   line-height: 61px;
@@ -487,7 +501,8 @@ h2 {
 }
 
 h3 {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -495,7 +510,8 @@ h3 {
 }
 
 h4, .heading-4 {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
@@ -503,7 +519,8 @@ h4, .heading-4 {
 }
 
 h5 {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
@@ -1056,7 +1073,8 @@ h4 {
 body {
   color: #02face;
   background-color: #04150f;
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-size: 14px;
   line-height: 18px;
   font-style: normal;
@@ -1069,7 +1087,8 @@ body {
 .display-2,
 .heading-lg,
 .heading-sm-1 {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   color: #0EA5EA;
   font-weight: 700;
   line-height: 1.2;
@@ -1099,7 +1118,8 @@ a.text-brand-3:hover {
 .btn {
   border-radius: 6px;
   padding: 10px 16px;
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
@@ -1677,7 +1697,8 @@ input {
 }
 
 .card-style-2 {
-  font-family: 'Montserrat Alternates';
+  font-family: 'Gilroy-Bold', sans-serif;
+
   border-width: 0px;
   border-style: solid;
   padding: 29px;
@@ -1887,7 +1908,7 @@ input {
 }
 .preloader img {
   max-width: 250px;
-  animation-name: spin;
+  /* animation-name: spin; */
   animation-duration: 1000ms;
   animation-iteration-count: revert-layer;
 }
@@ -2167,6 +2188,7 @@ input {
   min-height: 76px;
 }
 .header .main-header .header-nav {
+  margin-right: -11%;
   display: inline-block;
   width: 65%;
   text-align: center;
@@ -2287,7 +2309,7 @@ input {
 }
 .header .main-menu {
   display: inline-block;
-  padding-top: 3px;
+  padding-top: 0px;
 }
 .header .main-menu li {
   float: left;
@@ -2318,7 +2340,8 @@ input {
   margin: 5px 0;
 }
 .header .main-menu li a {
-  font-family: 'Montserrat Alternates';
+  font-family: 'Gilroy-Bold', sans-serif;
+
   font-style: normal;
   line-height: 1px;
   display: block;
@@ -2348,12 +2371,10 @@ input {
   position: absolute;
   top: calc(100% + 9px);
   left: 0px;
-  z-index: 999999;
-  min-width: 180px;
-  border-radius: 0 0 4px 4px;
-  padding: 8px 0px 8px 0;
+  z-index: 1000001;
+  min-width: 219px;
+  padding: 7px 0px 8px 0;
   background: #17322e;
-  /* Gray/800 [night] */
   border: 1px solid #222F43;
   box-shadow: 0px 23.1405px 69.4215px rgba(0, 0, 0, 0.12);
   border-radius: 8px;
@@ -2390,7 +2411,8 @@ input {
   width: 100%;
 }
 .header .text-link-bd-btom {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -2509,7 +2531,8 @@ input {
   margin-top: 30px;
 }
 .header-top span {
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
@@ -2865,7 +2888,8 @@ input {
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li a {
   font-size: 16px;
-   font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
   line-height: 1;
   text-transform: capitalize;
   font-weight: 500;
