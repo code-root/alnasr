@@ -1,6 +1,11 @@
 @include('partials.header')
 @include('partials.navbar')
 
+<style>
+    .body {
+       background-color:  #FFF3F3 !important ;
+    }
+</style>
 
 <main class="main">
     <div class="cover-home3">
@@ -28,13 +33,14 @@
 </div>
 </div>
 </div>
-<img src="{{asset('assets')}}/home/us-1.jpg" alt="us-1" style="right: 0px;/* float: unset; */position: absolute;width: 100%;height: 48%;">
+
+
 <div class="container">
     <div class="row">
                 <h1 class="color-linear d-inline-block mb-30" style="text-align: center;position: relative;">Contact Us</h1>
                 <p class="text-xl color-gray-500" style="position: relative;">
-                We are Victory, a creative and dedicated team passionate about web development nearly as
-                much as we cherish our clients. We are an impassioned team with a mission to achieve perfection in web design.
+                    We are Victory, a creative and dedicated team passionate about web development nearly as much as we cherish our clients.  
+                    We are an impassioned team with a mission to achieve perfection in web design.                   
                 </p>
             </div>
             {{-- <div class="text-center mt-30">
@@ -80,6 +86,7 @@
                 </div>
             </form>
             @endif
+            <img src="{{asset('assets')}}/home/caractr.png" alt="us-1" style="position: absolute;width: 100%;height: 101%;top: 82%;right: 1%;">
 
           </div>
         </div>
@@ -87,5 +94,10 @@
     </div>
   </main>
 
+  <style>
+  .footer {
+  display: none !important;
+  }
+  </style>
 
 @include('partials.footer')

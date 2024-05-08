@@ -15,8 +15,11 @@ use Illuminate\Support\Facades\DB;
 class CategoryController extends Controller
 {
 
+    public function  blog () {
 
-    public function page_about ( ) {
+    }
+
+    public function portfolio ( ) {
         $projects = Projects::with(['image', 'category' , 'SubCategory' , 'user'])->where('subCategory_id','=' , 0)->latest()->take(12)->get();
         $category = Category::get();
         $services =  Service::with(['category'])->latest()->take(3)->get();

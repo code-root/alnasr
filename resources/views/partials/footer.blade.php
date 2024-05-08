@@ -54,19 +54,21 @@
               <img  src="{{asset('assets')}}/home/image/3lama.png"  alt="al-nasr" style="width: 80% !important;">
           </div>
           <div class="col-lg-4 mb-30">
-            <h6 class="text-lg mb-30 color-white wow animate__animated animate__fadeInUp">Categories</h6>
             <div class="row">
               <div class="col-6">
+            <h6 class="text-lg mb-30 color-white wow animate__animated animate__fadeInUp" style="color: #ffffff !important ">Categories</h6>
                 <ul class="menu-footer">
-
                     @foreach ($category as $item )
                     <li><a class="color-gray-500" href="{{ route('showByCategory',$item->name ) }}"></a></li>
                   <li class="wow animate__animated animate__fadeInUp"><a class="color-gray-500" href="{{ route('showByCategory',$item->name ) }}">{{ $item->name }}</a></li>
                     @endforeach
                 </ul>
               </div>
+              
               <div class="col-6">
+            <h6 class="text-lg mb-30 color-white wow animate__animated animate__fadeInUp" style="color: #ffffff !important" >Services</h6>
                 <ul class="menu-footer">
+                  
                     @isset($subCategory)
                     @foreach ($subCategory as $item )
                     <li class="wow animate__animated animate__fadeInUp"><a class="color-gray-500" href="/s/{{ $item->name }}">{{ $item->name }}</a></li>
@@ -94,8 +96,8 @@
             </div>
         @endif
             @if(!session('subscribed'))
-                <h4 class="text-lg mb-30 color-white wow animate__animated animate__fadeInUp">Newsletter</h4>
-                <p class="text-base color-gray-500 wow animate__animated animate__fadeInUp">Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.</p>
+                <h4 class="text-lg mb-30 color-white wow animate__animated animate__fadeInUp">Contact us</h4>
+                {{-- <p class="text-base color-gray-500 wow animate__animated animate__fadeInUp">Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.</p> --}}
                 <div class="form-newsletters mt-15 wow animate__animated animate__fadeInUp">
                     <form action="{{ route('subscribers.store') }}" method="POST">
                         @csrf
@@ -105,31 +107,33 @@
                         <div class="form-group">
                             <input name="email" class="input-email border-gray-500" type="email" placeholder="Email address">
                         </div>
+                        <div class="form-group">
+                            <input name="number" class="input-email border-gray-500" type="phone" placeholder="phone">
+                        </div>
                         <div class="form-group mt-20">
                             <button type="submit" class="btn btn-linear hover-up">
-                                Subscribe <i class="fi-rr-arrow-small-right"></i>
+                                Send <i class="fi-rr-arrow-small-right"></i>
                             </button>
                         </div>
+
+
                     </form>
                 </div>
             @endif
         </div>
 
         </div>
-        <div class="footer-bottom border-gray-800">
           <div class="row">
-            <div class="col-lg-5 text-center text-lg-start">
-              <p class="text-base color-white wow animate__animated animate__fadeIn">© Developer By <a class="copyright" href="https://wa.me/201001995914" target="_blank">Mostafa Elbagory</a></p>
-            </div>
-            <div class="col-lg-7 text-center text-lg-end">
-              <div class="box-socials">
-                <div class="d-inline-block mr-30 wow animate__animated animate__fadeIn" data-wow-delay=".0s"><a class="icon-socials icon-twitter color-gray-500" href="https://twitter.com">Twitter</a></div>
-                <div class="d-inline-block mr-30 wow animate__animated animate__fadeIn" data-wow-delay=".2s"><a class="icon-socials icon-linked color-gray-500" href="https://www.linkedin.com">LinkedIn</a></div>
-                <div class="d-inline-block wow animate__animated animate__fadeIn" data-wow-delay=".4s"><a class="icon-socials icon-insta color-gray-500" href="https://www.instagram.com">Instagram</a></div>
+            <div class=" text-end">
+              <div class="switch-button">
+                <div class="form-check form-switch" style="font-size: x-large;">
+                  <a class="icon-socials color-gray-500" href="https://www.instagram.com/allnasr.co?utm_source=qr&amp;igsh=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a> 
+                  <a class="icon-socials color-gray-500" href="https://www.facebook.com/profile.php?id=61555548246249&amp;mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a> 
+                  <a class="icon-socials color-gray-500" href="https://www.instagram.com"><i class="fa-brands fa-x-twitter"></i></a> 
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </footer>

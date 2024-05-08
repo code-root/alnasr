@@ -10,11 +10,12 @@
             <div class="row align-items-end mt-50">
               <div class="col-lg-7 mb-20">
                 <div class="d-inline-block position-relative">
-                  <h1 class="color-white mb-20 color-linear wow animate__animated animate__fadeIn">{{ $category->name }}</h1><span class="btn btn-linear-small btn-number-arts">{{ $category->blog()->count() }} blog</span>
+                  <h1 class=" mb-20 color-linear wow animate__animated animate__fadeIn">{{ $category->name }}</h1>
+                  {{-- <span class="btn btn-linear-small btn-number-arts">{{ $category->blog()->count() }} blog</span> --}}
                 </div>
                 <p class="color-gray-500 text-base wow animate__animated animate__fadeIn">{{$category->title }}</p>
               </div>
-              <div class="col-lg-5 mb-20 text-start text-lg-end">
+              {{-- <div class="col-lg-5 mb-20 text-start text-lg-end">
                 <div class="box-breadcrumbs wow animate__animated animate__fadeIn">
                   <ul class="breadcrumb">
                     <li><a class="home" href="/">Home</a></li>
@@ -22,16 +23,16 @@
                     <li><span>{{ $category->name }}</span></li>
                   </ul>
                 </div>
-              </div>
-              <div class="col-lg-12">
+              </div> --}}
+              {{-- <div class="col-lg-12">
                 <div class="border-bottom border-gray-800 mt-10 mb-30"></div>
-              </div>
+              </div> --}}
             </div>
             <div class="mb-70">
                 <div class="box-topics border-gray-800 bg-gray-850">
                   <div class="row">
                     <div class="col-lg-2">
-                      <h5 class="mb-15 color-white wow animate__animated animate__fadeInUp" data-wow-delay="0s">Latest projects</h5>
+                      <h5 class="mb-15  wow animate__animated animate__fadeInUp" data-wow-delay="0s">Latest projects</h5>
                       <p class="color-gray-500 mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">The latest projects that won the admiration of customers</p>
                       <div class="box-buttons-slider position-relative wow animate__animated animate__zoomIn">
                         <div class="swiper-button-prev swiper-button-prev-style-1"></div>
@@ -59,7 +60,7 @@
                                                             @endif
                                                             <div class="card-info">
                                                                 <div class="info-bottom">
-                                                                    <h6 class="color-white mb-5">{{ $item->name }}</h6>
+                                                                    <h6 class=" mb-5">{{ $item->name }}</h6>
                                                                     <p class="text-xs color-gray-500">{{ $item->category->name ?? '' }}</p>
                                                                 </div>
                                                             </div>
@@ -144,15 +145,6 @@
 
 @isset($services)
 
-                             <div class="mb-70"></div>
-                             <h2 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp">Pricing</h2>
-                             <ul class="list-unstyled text-left wow animate__animated animate__fadeInUp">
-                                 <li class="point"><i class="far fa-gem check-icon text-success"></i> Transforming ideas into visually captivating realities.</li>
-                                 <li class="point"><i class="far fa-lightbulb check-icon text-warning"></i> Elevating your brand's identity with innovative designs tailored to your needs.</li>
-                                 <li class="point"><i class="fas fa-paint-brush check-icon text-info"></i> Delivering striking logos and captivating marketing materials.</li>
-                                 <li class="point"><i class="fas fa-users check-icon text-primary"></i> Dedicated team offering top-notch, creative solutions.</li>
-                                 <li class="point"><i class="far fa-star check-icon text-danger"></i> Experience the exceptional power of design to bring your vision to life!</li>
-                             </ul>
                              <div class="row mt-50 mb-30">
                                 @php
                                     $x = 0;
@@ -176,26 +168,26 @@
 
                                     <div class="col-lg-4 wow animate__animated animate__fadeIn" data-wow-delay="1">
                                         <div class="card-pricing border-gray-800 bg-gray-850 mb-30">
-                                            <label class="{{ $label->class }} text-base color-gray-900" style="color:#37ffa2 ">{{ $label->text }}</label>
+                                            <label class="{{ $label->class }} text-base color-gray-900">{{ $label->text }}</label>
                                             <div class="card-pricing-top border-gray-800">
-                                                {{-- <h3 class="color-white mb-10">Business</h3> --}}
-                                                <h3 class="color-white mb-10">{{ $option->name }}</h3>
+                                                {{-- <h3 class=" mb-10">Business</h3> --}}
+                                                <h3 class=" mb-10">{{ $option->name }}</h3>
                                                 @if($option->price_before && $option->price_before > $option->price)
                                                     <div class="discount">
                                                         <s class="text-lg color-gray-500 mb-15">${{ $option->price_before }}</s>
                                                         <p class="text-lg color-gray-500 mb-15">${{ $option->price }}</p>
                                                     </div>
                                                 @else
-                                                    <p class="text-lg color-gray-500 mb-15"  style="color:#37ffa2 ">${{ $option->price }}</p>
+                                                    <p class="text-lg color-gray-500 mb-15"  >${{ $option->price }}</p>
                                                 @endif
-                                                <p class="text-base color-gray-500 mb-30"  style="color:#37ffa2 ">{{ $option->description }}</p>
-                                                <button type="button" style="color: #04140f;background-color: #37ffa2;" class="btn btn-lg btn-danger mt-3 btn-order-now"
+                                                <p class="text-base color-gray-500 mb-30"  >{{ $option->description }}</p>
+                                                <button type="button" style="background-color: #7f07d0;width: 100%" class="btn btn-lg btn-danger mt-3 btn-order-now"
                                                 onclick="changeValueAndOpenModal('{{ $option->id }}')" >
                                                 <i class="fas fa-shopping-cart"></i>
                                                 Order now
                                             </button>                                            </div>
                                             <div class="card-pricing-bottom">
-                                                <h6 class="color-white mb-25">What you get:</h6>
+                                                <h6 class=" mb-25">What you get:</h6>
                                                 <ul class="list-checked">
                                         @if($option->features)
                                         @php
@@ -249,18 +241,29 @@
                 @isset($subCategory)
                 @foreach ($subCategory as $item )
                 @isset($item['image'][0]['url'])
-                {{-- @if(file_exists(public_path($item['image'][0]['url']))) --}}
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
-                    <div class="card-style-2 hover-up hover-neon wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                    <div class="card-style-33 hover-up hover-neon wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
                       <div class="card-image"><a href="/{{ $item['image'][0]['url'] }}"><img src="/{{ $item['image'][0]['url'] }}" alt="{{ $item->name }}"></a></div>
                       <div class="card-info"><a class="color-gray-500" href="/s/{{ $item->name ?? '' }}"> {{ $item->name }}</a></div>
                     </div>
                   </div>
+
+                  
                   {{-- @endif --}}
                 @endisset
                 @endforeach
                 @endisset
               </div>
+  
+              
+              <div class="mb-70"></div>
+              <h2 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="    font-style: normal;
+              font-weight: 400;
+              font-size: 66.9px;
+              line-height: 77px;
+              text-align: center;
+              color: #A201FF;">BLOG</h2>            
+
               <div class="mt-50 mb-50">
                 <div class="row mt-50 mb-10">
                   @isset($blog)
@@ -274,13 +277,13 @@
                           <img src="/{{ $item['image'][0]['url'] }}" alt="{{  $item->name }}"></a>
                           </div>
                         <div class="card-info">
-                            <div class="col-7"><a class="color-gray-700 text-sm" href="/c/{{ $item->category->name ?? '' }}"> #{{ $item->category->name ?? '' }}</a>
+                            <div class="col-8"><a class="color-gray-700 text-sm" href="/c/{{ $item->category->name ?? '' }}"> #{{ $item->category->name ?? '' }}</a>
                               <a class="color-gray-700 text-sm" href="/s/{{ $item->subCategory->name ?? '' }}"> #{{ $item->subCategory->name ?? '' }}</a>
                             </div>
-                            <div class="col-5 text-end"><span class="color-gray-700 text-sm timeread">{{ $item->updated_at }}</span></div>
+                            <div class="col-8"><span class="color-gray-700 text-sm timeread">{{ $item->updated_at }}</span></div>
                           </div><a href="">
-                            <h5 class="color-white mt-20">{{  $item->name }}</h5></a>
-                          <div class="row align-items-center mt-25">
+                            <h5 class=" mt-20">{{  $item->name }}</h5></a>
+                          {{-- <div class="row align-items-center mt-25">
                             <div class="col-7">
                               <div class="box-author"><img src="https://ui-avatars.com/api/?name={{ $item->users->name ?? '' }}" alt="al-nasr">
                                 <div class="author-info">
@@ -289,7 +292,7 @@
                               </div>
                             </div>
                             <div class="col-5 text-end"><a class="readmore color-gray-500 text-sm" href="/b/{{ $item->category->name ?? '' }}/{{ $item->name ?? '' }}"><span>Read more</span></a></div>
-                          </div>
+                          </div> --}}
                         </div>
                       </div>
                       {{-- @endif --}}

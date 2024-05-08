@@ -203,4 +203,5 @@ Auth::routes();
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/', [App\Http\Controllers\CategoryController::class, 'homePage'])->name('homePage');
     Route::get('/contact-us', [App\Http\Controllers\CategoryController::class, 'contact_us'])->name('contact_us');
-    Route::get('/page-about', [App\Http\Controllers\CategoryController::class, 'page_about'])->name('page_about');
+    Route::get('/portfolio', [App\Http\Controllers\CategoryController::class, 'portfolio'])->name('portfolio');
+    Route::get('/blog', [App\Http\Controllers\CategoryController::class, 'blog'])->name('blogs.index');

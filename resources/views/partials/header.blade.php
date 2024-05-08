@@ -51,4 +51,50 @@
         height: 67px;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+  .header-right {
+    display: none; /* تخفي شريط العنوان */
+  }
+  .video-container {
+    display: none !important;
+
+  }
+  .header .main-header .header-logo {
+    position: relative;
+    left: 12%;
+    width: 16%;
+}
+
+.ourPro {
+  font-size:34px  !important;
+  margin-top: 14px  !important;
+  margin-left: 21%  !important;
+}
+
+.subCategory {
+  width: 50% !important;
+  font-size: 16px  !important;
+}
+.card-style-2 {
+    padding: 17px;
+    border-radius: 58px;
+    margin-bottom: 20px;
+}
+
+.ppv {
+  margin-left: 13rem !important; 
+}
+}
+
+.subCategory {
+  width: 14%;text-align: center;
+}
+
+.ourPro {
+  font-size: 26px;
+    margin-top: 5rem;
+    margin-left: 19%;
+      }
 </style>

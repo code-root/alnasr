@@ -29,6 +29,18 @@
         display: none !important;
     }
 
+    .hover-img {
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    background: #58028b ; 
+    }
+
+    .color-it {
+      background: #a821f6;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    }
+
 </style>
     <main class="main">
 
@@ -40,43 +52,31 @@
         </div>
 
         
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-1"></div>
-            <div class="col-xl-12 col-lg-12">
-              <div class="banner">
-                <div class="row align-items-end">
-                  <div class="col-lg-6 pt-100">
+        <div style="padding: 2%;">
+        <
+                  <div class="col-lg-7">
                     {{-- <span class="text-sm-bold color-gray-600 wow animate__animated animate__fadeInUp">Hello Everyone!</span> --}}
-                    <h3 class="color-gray-50 mt-20 mb-20 wow animate__animated animate__fadeInUp">IS IT<a class="typewrite color-linear" href="#" data-period="3000" data-type="[ &quot;graphic designe&quot;, &quot;Motion 3D&quot;, &quot;Montage&quot; , &quot;programmers&quot;  , &quot;motion graphic&quot; ]"></a></h3>
+                    <h1 class=" mt-20  wow animate__animated animate__fadeInUp">IS IT
+                      <a style="color:#a821f6 !important;" class="typewrite color-it" href="#" data-period="3000" data-type="[ &quot;Graphic Designe&quot;, &quot;Motion 3D&quot;, &quot;Montage&quot; , &quot;Programmers&quot;  , &quot;Motion Graphic&quot; ]"></a></h1>
                     <div class="row">
-                      <div class="col-lg-12">
-                        <h4 class="color-gray-50">You're looking F o r ?</h4>
-                    <h6 class="color-linear d-inline-block mb-30">
-                      Welcome to Al-Nasr Company, where creativity is our language and design is our passion
+                      <div class="col-lg-6">
+                        <h2 style="color:#58028b !important;">You're looking For ?</h2>
+                    <h6 class="color-linear mt-20  d-inline-block mb-40">
+                      Welcome to Allnasr, your one-stop destination for all your design needs!
                     </h6>
                       </div>
                     </div>
-
                   </div>
-                   {{--  <div class="col-lg-6 text-center">
-                    <div class="banner-img position-relative wow animate__animated animate__fadeIn"><img  src="{{asset('assets')}}/home/post_24048560428620.png" alt="al-nasr">
-                     <div class="pattern-1"><img src="{{asset('assets')}}/home/image/logo-34-35.png" style="width: 11%; " alt="al-nasr"></div> 
-                     <div class="pattern-2"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"  style="width: 11%; "></div>
-                      <div class="pattern-3"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"></div>
-                    <div class="pattern-4"><img src="{{asset('assets')}}/home/image/logo-34-35.png" alt="al-nasr"></div>
-                    </div>
-                  </div>
-                  --}}
-                </div>
-              </div>
+ 
+                  <hr style="height: 2px;width: 100%;color: #a821f6 !important;opacity: unset;">
               <div class="mb-70">
                 <div class="box-topics border-gray-800 bg-gray-850">
                   <div class="row">
-                    <div class="col-lg-2">
-                      <h5 class="mb-15 color-white wow animate__animated animate__fadeInUp" data-wow-delay="0s">SOME OF OUR PRODUCTION</h5>
+                    <div class="col-lg-2" >
+                      <p class="mb-15 color-white wow animate__animated animate__fadeInUp ourPro" data-wow-delay="0s" >Some For Our</p>  
+                      <h3 style="text-align: center;margin-bottom: 1rem; color:#cba776">Production</h3>
                       {{-- <p class="color-gray-500 mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">The latest projects that won the admiration of customers, as our team designed them with love ...</p> --}}
-                      <div class="box-buttons-slider position-relative wow animate__animated animate__zoomIn">
+                      <div class="box-buttons-slider position-relative wow animate__animated animate__zoomIn ppv" style="margin-left: 3rem;"> 
                         <div class="swiper-button-prev swiper-button-prev-style-1"></div>
                         <div class="swiper-button-next swiper-button-next-style-1"></div>
                       </div>
@@ -117,29 +117,20 @@
                   </div>
                 </div>
               </div>
-          
-         
-
-
-            </div>
-        </div>
       </div>
 
 
-            <img src="{{asset('assets')}}/home/841502.jpg" alt="" style="position: absolute;5%;top: 40%;">
-            <div class="container">
-
-            <h2 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="position: relative; ">WHAT WE DO</h2>
-            {{-- <p class="text-lg color-gray-500 wow animate__animated animate__fadeInUp">Most requested services</p> --}}
+      <div style="padding: 2%;">
+        <h1 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="position: relative;  ">WHAT WE DO</h1>
+            <h3 class="text-lg  wow animate__animated animate__fadeInUp" style="position: relative;right: -9px;top: -2px;font-family: Gilroy-Medium !important;">OUR SERVICES</h3>
             <div class="row mt-70 mb-50">
                 @isset($subCategory)
                 @foreach ($subCategory as $item )
                 @isset($item['image'][0]['url'])
                 @if($item['image'][0]['status'] !='video'  )
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
-                    <div class="card-style-2 hover-up hover-neon wow animate__animated animate__fadeIn" data-wow-delay="0.9s" style="background: rgb(148 182 177 / 42%);backdrop-filter: blur(7px);">
-         
-                        <div><a class="color-gray-500" href="/s/{{ $item->name ?? '' }}"> {{ $item->name }}</a></div>
+                <div class="subCategory">
+                  <div class="card-style-2 hover-up hover-img wow animate__animated animate__fadeIn" data-wow-delay="0.9s">
+                        <div><a  href="/s/{{ $item->name ?? '' }}"> {{ $item->name }}</a></div>
                     </div>
                   </div>
                   @endif
@@ -199,7 +190,8 @@
                                     <div class="box-author mb-10">
                                         <img src="/{{ $item['image'][0]['url'] }}" alt="{{ $item->name }}">
                                         <div class="author-info">
-                                            <h6 class="color-white-700">{{ $item->name }}</h6><span class="color-gray-700 text-sm">{{ $item->job_name }}</span>
+                                            <h6 class="color-white-700" style="color:black">{{ $item->name }}</h6>
+                                            <span class="color-gray-700 text-sm" style="color:rgb(255, 255, 255)" >{{ $item->job_name }}</span>
                                         </div>
                                     </div>
 
@@ -217,12 +209,11 @@
               </div>
               @endisset
 
-              <div class="row align-items-end mt-30">
-                <div class="col-lg-9 wow animate__animated animate__fadeIn">
-                  <h3 class="color-linear" style="position: relative;">PARTNERS</h3>
+              <div class="row mt-30" style="text-align: center;">
+                  <div class="col-lg-12 wow animate__ animate__fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                    <h3 class="color-linear" style="position: relative;">PARTNERS</h3>
+                  </div>
                 </div>
-                <div class="col-lg-3 text-lg-end mt-15 hover-up wow animate__animated animate__fadeIn" data-wow-delay="0.2s"><a class="link-brand-1" href="#">Learn More</a></div>
-              </div>
 
               <div class="list-logos mt-50 mb-30">
                 <div class="container">
