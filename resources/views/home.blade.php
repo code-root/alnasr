@@ -52,8 +52,8 @@
         </div>
 
         
-        <div style="padding: 2%;">
-        <
+        <div style="position: relative;padding: 2%;top: -8rem;">
+        
                   <div class="col-lg-7">
                     {{-- <span class="text-sm-bold color-gray-600 wow animate__animated animate__fadeInUp">Hello Everyone!</span> --}}
                     <h1 class=" mt-20  wow animate__animated animate__fadeInUp">IS IT
@@ -68,15 +68,15 @@
                     </div>
                   </div>
  
-                  <hr style="height: 2px;width: 100%;color: #a821f6 !important;opacity: unset;">
+                <hr style="height: 2px;width: 100%;color: #a821f6 !important;opacity: unset;">
               <div class="mb-70">
                 <div class="box-topics border-gray-800 bg-gray-850">
                   <div class="row">
                     <div class="col-lg-2" >
                       <p class="mb-15 color-white wow animate__animated animate__fadeInUp ourPro" data-wow-delay="0s" >Some For Our</p>  
-                      <h3 style="text-align: center;margin-bottom: 1rem; color:#cba776">Production</h3>
+                      <h3 style="text-align: center;margin-bottom: 1rem;color: #ffffff;">Production</h3>
                       {{-- <p class="color-gray-500 mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">The latest projects that won the admiration of customers, as our team designed them with love ...</p> --}}
-                      <div class="box-buttons-slider position-relative wow animate__animated animate__zoomIn ppv" style="margin-left: 3rem;"> 
+                      <div class="box-buttons-slider position-relative wow animate__animated animate__zoomIn ppv" style="margin-left: 6rem;"> 
                         <div class="swiper-button-prev swiper-button-prev-style-1"></div>
                         <div class="swiper-button-next swiper-button-next-style-1"></div>
                       </div>
@@ -121,7 +121,7 @@
 
 
       <div style="padding: 2%;">
-        <h1 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="position: relative;  ">WHAT WE DO</h1>
+        <h1 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="position: relative; color: #311557 !important; ">WHAT WE DO</h1>
             <h3 class="text-lg  wow animate__animated animate__fadeInUp" style="position: relative;right: -9px;top: -2px;font-family: Gilroy-Medium !important;">OUR SERVICES</h3>
             <div class="row mt-70 mb-50">
                 @isset($subCategory)
@@ -139,7 +139,7 @@
                 @endisset
             </div>
 
-              <h2 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="position: relative;">SOME VIDEOS</h2>
+              <h2 class="d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="color: #311557 !important; position: relative;">SOME VIDEOS</h2>
               {{-- <p class="text-lg color-gray-500 wow animate__animated animate__fadeInUp" style="position: relative;">Our best work is in videos made for clients</p> --}}
 
                 <div class="row mt-70">
@@ -176,7 +176,7 @@
 
                 @isset($latestOurTeamMembers)
               <div class="text-center mt-70 mb-50">
-                <h2 class="color-linear d-inline-block mb-10 wow animate__ animate__fadeInUp animated" style="position: relative;visibility: visible;animation-name: fadeInUp;">MEET US</h2>
+                <h2 class="d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="color: #311557 !important; position: relative;">MEET US</h2>
             </div>
             <div class="box-testimonials mb-150 animate__fadeIn mb-100">
                 <div class="box-swiper">
@@ -190,7 +190,7 @@
                                     <div class="box-author mb-10">
                                         <img src="/{{ $item['image'][0]['url'] }}" alt="{{ $item->name }}">
                                         <div class="author-info">
-                                            <h6 class="color-white-700" style="color:black">{{ $item->name }}</h6>
+                                            <h6 class="color-white-700" style="color:rgb(255, 255, 255) ; font-size:24px !important" >{{ $item->name }}</h6>
                                             <span class="color-gray-700 text-sm" style="color:rgb(255, 255, 255)" >{{ $item->job_name }}</span>
                                         </div>
                                     </div>
@@ -201,7 +201,7 @@
                             @endforeach
                     </div>
                   <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                  <div class="swiper-buttons">
+                  <div class="swiper-buttons" style="left :-1rem !important">
                     <div class="swiper-button-prev swiper-button-prev-style-3" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-8b5f89fbf10afd4a7"></div>
                     <div class="swiper-button-next swiper-button-next-style-3" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-8b5f89fbf10afd4a7"></div>
                   </div>

@@ -37,7 +37,7 @@
 
 <div class="container">
     <div class="row">
-                <h1 class="color-linear d-inline-block mb-30" style="text-align: center;position: relative;">Contact Us</h1>
+                <h1 class="color-linear d-inline-block mb-30" style="position: absolute;top: 82%;right: 31%;">Contact Us</h1>
                 <p class="text-xl color-gray-500" style="position: relative;">
                     We are Victory, a creative and dedicated team passionate about web development nearly as much as we cherish our clients.  
                     We are an impassioned team with a mission to achieve perfection in web design.                   

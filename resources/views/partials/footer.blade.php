@@ -50,13 +50,11 @@
     <div class="container">
       <div class="footer-1 bg-gray-850 border-gray-800">
         <div class="row">
-          <div class="col-lg-4 mb-30">
-              <img  src="{{asset('assets')}}/home/image/3lama.png"  alt="al-nasr" style="width: 80% !important;">
-          </div>
+         
           <div class="col-lg-4 mb-30">
             <div class="row">
               <div class="col-6">
-            <h6 class="text-lg mb-30 color-white wow animate__animated animate__fadeInUp" style="color: #ffffff !important ">Categories</h6>
+            <h6 class="text-lg mb-30 color-white wow animate__animated animate__fadeInUp" style="color: #ffffff !important ;     position: relative;">Categories</h6>
                 <ul class="menu-footer">
                     @foreach ($category as $item )
                     <li><a class="color-gray-500" href="{{ route('showByCategory',$item->name ) }}"></a></li>
@@ -65,8 +63,8 @@
                 </ul>
               </div>
               
-              <div class="col-6">
-            <h6 class="text-lg mb-30 color-white wow animate__animated animate__fadeInUp" style="color: #ffffff !important" >Services</h6>
+              <div class="col-6" >
+            <h6 class="text-lg mb-30 color-white wow animate__animated animate__fadeInUp" style="color: #ffffff !important ;     position: relative;" >Services</h6>
                 <ul class="menu-footer">
                   
                     @isset($subCategory)
@@ -76,6 +74,7 @@
                     @endisset
                 </ul>
               </div>
+            
             </div>
           </div>
 
@@ -121,7 +120,9 @@
                 </div>
             @endif
         </div>
-
+        <div class="col-lg-4 mb-30">
+            <img  src="{{asset('assets')}}/caracter.svg"  alt="al-nasr" style="position: relative;width: 100% !important;">
+        </div>
         </div>
           <div class="row">
             <div class=" text-end">

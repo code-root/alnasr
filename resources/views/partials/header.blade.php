@@ -68,9 +68,9 @@
 }
 
 .ourPro {
-  font-size:34px  !important;
-  margin-top: 14px  !important;
-  margin-left: 21%  !important;
+    font-size: 32px;
+    margin-top: 5rem;
+    margin-left: 9%;
 }
 
 .subCategory {

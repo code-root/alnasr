@@ -2,10 +2,9 @@
 @include('partials.navbar')
 
 <main class="main">
-    <div class="cover-home3">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-1"></div>
+    <div class="cover-home1">
+      {{-- <div class="container"> --}}
+        <div class="row" style="padding: 2%">
           <div class="col-xl-10 col-lg-12">
             <div class="row align-items-end mt-50">
               <div class="col-lg-7 mb-20">
@@ -15,24 +14,13 @@
                 </div>
                 <p class="color-gray-500 text-base wow animate__animated animate__fadeIn">{{$category->title }}</p>
               </div>
-              {{-- <div class="col-lg-5 mb-20 text-start text-lg-end">
-                <div class="box-breadcrumbs wow animate__animated animate__fadeIn">
-                  <ul class="breadcrumb">
-                    <li><a class="home" href="/">Home</a></li>
-                    <li><a href="#">category</a></li>
-                    <li><span>{{ $category->name }}</span></li>
-                  </ul>
-                </div>
-              </div> --}}
-              {{-- <div class="col-lg-12">
-                <div class="border-bottom border-gray-800 mt-10 mb-30"></div>
-              </div> --}}
             </div>
-            <div class="mb-70">
+          </div>
+            <div class="mb-70" >
                 <div class="box-topics border-gray-800 bg-gray-850">
                   <div class="row">
                     <div class="col-lg-2">
-                      <h5 class="mb-15  wow animate__animated animate__fadeInUp" data-wow-delay="0s">Latest projects</h5>
+                      <h5 class="mb-15  wow animate__animated animate__fadeInUp" data-wow-delay="0s" style="color: #ffffff">Latest projects</h5>
                       <p class="color-gray-500 mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">The latest projects that won the admiration of customers</p>
                       <div class="box-buttons-slider position-relative wow animate__animated animate__zoomIn">
                         <div class="swiper-button-prev swiper-button-prev-style-1"></div>
@@ -174,8 +162,8 @@
                                                 <h3 class=" mb-10">{{ $option->name }}</h3>
                                                 @if($option->price_before && $option->price_before > $option->price)
                                                     <div class="discount">
-                                                        <s class="text-lg color-gray-500 mb-15">${{ $option->price_before }}</s>
-                                                        <p class="text-lg color-gray-500 mb-15">${{ $option->price }}</p>
+                                                        <s class="text-lg color-gray-500 mb-15" style="color: #311667 !important;">${{ $option->price_before }}</s>
+                                                        <p class="text-lg color-gray-500 mb-15" style="color: #311667 !important;">${{ $option->price }}</p>
                                                     </div>
                                                 @else
                                                     <p class="text-lg color-gray-500 mb-15"  >${{ $option->price }}</p>
@@ -272,17 +260,23 @@
                   {{-- @if(file_exists(public_path($item['image'][0]['url']))) --}}
                   <div class="col-lg-4 wow animate__animated animate__fadeIn" data-wow-delay=".1s">
                       <div class="card-blog-1 hover-up">
-                        <div class="card-image mb-20"><a class="post-type" href="/b/{{ $item->category->name ?? '' }}/{{ $item->name ?? '' }}"></a>
+                        <img src="/{{ $item['image'][0]['url'] }}" style="width: 100%;border-radius: 28px;height: 64%;" alt="{{  $item->name }}"></a>
+
+                        <div class="card-image mb-20">
                           <a href="/b/{{ $item->category->name ?? '' }}/{{ $item->name ?? '' }}">
-                          <img src="/{{ $item['image'][0]['url'] }}" alt="{{  $item->name }}"></a>
                           </div>
-                        <div class="card-info">
-                            <div class="col-8"><a class="color-gray-700 text-sm" href="/c/{{ $item->category->name ?? '' }}"> #{{ $item->category->name ?? '' }}</a>
-                              <a class="color-gray-700 text-sm" href="/s/{{ $item->subCategory->name ?? '' }}"> #{{ $item->subCategory->name ?? '' }}</a>
+                        <div style="margin: 21px">
+                          <h5 class=" mt-20" style="color: wheat;direction: rtl;text-align: end;margin: 34px;">{{  $item->name }}</h5>
+                          <div style="position: relative;top: 8rem;">
+                            <a class="color-gray-700 text-sm" href="/c/{{ $item->category->name ?? '' }}" > #{{ $item->category->name ?? '' }}</a>
+                            <a class="color-gray-700 text-sm"  href="/s/{{ $item->subCategory->name ?? '' }}"> #{{ $item->subCategory->name ?? '' }}</a>
+                        <span class="color-gray-700 text-sm timeread">{{ $item->updated_at }}</span>
+                         
+                            
+                          </div>
+                   
                             </div>
-                            <div class="col-8"><span class="color-gray-700 text-sm timeread">{{ $item->updated_at }}</span></div>
-                          </div><a href="">
-                            <h5 class=" mt-20">{{  $item->name }}</h5></a>
+                          </div>
                           {{-- <div class="row align-items-center mt-25">
                             <div class="col-7">
                               <div class="box-author"><img src="https://ui-avatars.com/api/?name={{ $item->users->name ?? '' }}" alt="al-nasr">
@@ -293,7 +287,7 @@
                             </div>
                             <div class="col-5 text-end"><a class="readmore color-gray-500 text-sm" href="/b/{{ $item->category->name ?? '' }}/{{ $item->name ?? '' }}"><span>Read more</span></a></div>
                           </div> --}}
-                        </div>
+                        {{-- </div> --}}
                       </div>
                       {{-- @endif --}}
                   @endisset

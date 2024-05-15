@@ -650,7 +650,7 @@ h6 {
 }
 
 .color-linear {
-  background:  #58028a;
+  background:  #836fff;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -1472,14 +1472,14 @@ input {
 }
 
 .swiper-button-next {
-  background: url(../image/next.svg) no-repeat 0px 0px;
+  background: url(sm.svg) no-repeat 0px 0px;
 }
 .swiper-button-next:hover {
   background: url(../image/next-active.svg) no-repeat 0px 0px;
 }
 
 .swiper-button-prev {
-  background: url(../image/prev.svg) no-repeat 0px 0px;
+  background: url('sm2.svg') no-repeat 0px 0px;
 }
 .swiper-button-prev:hover {
   background: url(../image/prev.svg) no-repeat 0px 0px;
@@ -1631,7 +1631,7 @@ input {
 }
 .card-style-1 .card-image img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 24px;
 }
 .card-style-1 .card-image .link-post:hover h4 {
   color: #1CC2E7 !important;
@@ -1667,13 +1667,14 @@ input {
 }
 
 .card-blog-1 {
-  padding: 17px;
+  
+  height: 44rem !important;
+  padding: 0px;
   position: relative;
   width: 100%;
   color: #a200ff;
-  border-radius: 16px;
+  border-radius: 28px;
   border-width: 1px;
-  border-style: solid;
   margin-bottom: 21px;
   background: linear-gradient(355deg, #3e045f 47%, #a200ff 100%);
 }
@@ -5129,7 +5130,7 @@ input {
   padding: 19px;
   border-width: 0px;
   border-style: solid;
-  background: linear-gradient(355deg, #3e045f 47%, #a200ff 100%);
+  background: linear-gradient(359deg, #3e045f 6%, #a200ff 100%) ;
 }
 
 .box-author {
