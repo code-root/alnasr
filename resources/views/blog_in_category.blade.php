@@ -4,7 +4,8 @@
 <main class="main">
     <div class="cover-home1">
       {{-- <div class="container"> --}}
-        <div class="row" style="padding: 2%">
+        <div class="row home-div">
+
           <div class="col-xl-10 col-lg-12">
             <div class="row align-items-end mt-50">
               <div class="col-lg-7 mb-20">
@@ -67,69 +68,6 @@
                 </div>
               </div>
 
-              <style>
-
-
-                .discount {
-                    position: relative;
-                }
-
-                .discounted-price {
-                    font-size: 24px;
-                    color: #ff0000; /* لون السعر المخفض */
-                }
-
-                .original-price {
-                    font-size: 18px;
-                    color: #999; /* لون السعر الأصلي */
-                    text-decoration: line-through;
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    transform: translateY(-50%);
-                    margin-left: 5px;
-                }
-
-                /* تنسيق زر الشراء */
-                .btn-primary {
-                    background-color: #198754;
-                    border-color: #198754;
-                }
-
-                .btn-primary:hover {
-                    background-color: #126038;
-                    border-color: #126038;
-                }
-                .list-group-item {
-    position: relative;
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    background-color: #124e47;
-    border: 1px solid rgba(0,0,0,.125);
-}
-
-
-    .check-icon {
-            margin-right: 10px;
-            font-size: 20px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .check-icon:hover {
-            transform: scale(1.2);
-        }
-        .point {
-            font-size: 25px;
-    color: #ffffff;
-    margin-bottom: 26px;
-        }
-
-        .pp {
-            font-size: 13px;
-    color: #17322e;
-    margin-bottom: 10px;
-        }
-            </style>
 
 @isset($services)
 
@@ -173,7 +111,8 @@
                                                 onclick="changeValueAndOpenModal('{{ $option->id }}')" >
                                                 <i class="fas fa-shopping-cart"></i>
                                                 Order now
-                                            </button>                                            </div>
+                                            </button>
+                                          </div>
                                             <div class="card-pricing-bottom">
                                                 <h6 class=" mb-25">What you get:</h6>
                                                 <ul class="list-checked">
@@ -242,7 +181,8 @@
                 @endforeach
                 @endisset
               </div>
-  
+
+
               
               <div class="mb-70"></div>
               <h2 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="    font-style: normal;
@@ -266,8 +206,8 @@
                           <a href="/b/{{ $item->category->name ?? '' }}/{{ $item->name ?? '' }}">
                           </div>
                         <div style="margin: 21px">
-                          <h5 class=" mt-20" style="color: wheat;direction: rtl;text-align: end;margin: 34px;">{{  $item->name }}</h5>
-                          <div style="position: relative;top: 8rem;">
+                          <h5 class=" mt-20 blog-name-h5" >{{  $item->name }}</h5>
+                          <div class="blog-name-div">
                             <a class="color-gray-700 text-sm" href="/c/{{ $item->category->name ?? '' }}" > #{{ $item->category->name ?? '' }}</a>
                             <a class="color-gray-700 text-sm"  href="/s/{{ $item->subCategory->name ?? '' }}"> #{{ $item->subCategory->name ?? '' }}</a>
                         <span class="color-gray-700 text-sm timeread">{{ $item->updated_at }}</span>

@@ -1,47 +1,6 @@
     @include('partials.header')
     @include('partials.navbar')
-<style>
-     .check-icon {
-            margin-right: 10px;
-            font-size: 20px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .check-icon:hover {
-            transform: scale(1.2);
-        }
 
-     .video-container {
-        position: relative;
-        top: -6rem;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    video {
-        width: 100%;
-        height: auto;
-    }
-    video::-webkit-media-controls {
-        display: none !important;
-    }
-
-    .hover-img {
-    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
-    background: #58028b ; 
-    }
-
-    .color-it {
-      background: #a821f6;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-    }
-
-</style>
     <main class="main">
 
       <div class="cover-home1">
@@ -52,7 +11,7 @@
         </div>
 
         
-        <div style="position: relative;padding: 2%;top: -8rem;">
+        <div class="home-div">
         
                   <div class="col-lg-7">
                     {{-- <span class="text-sm-bold color-gray-600 wow animate__animated animate__fadeInUp">Hello Everyone!</span> --}}
@@ -74,7 +33,7 @@
                   <div class="row">
                     <div class="col-lg-2" >
                       <p class="mb-15 color-white wow animate__animated animate__fadeInUp ourPro" data-wow-delay="0s" >Some For Our</p>  
-                      <h3 style="text-align: center;margin-bottom: 1rem;color: #ffffff;">Production</h3>
+                      <h3 class="home-h3">Production</h3>
                       {{-- <p class="color-gray-500 mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">The latest projects that won the admiration of customers, as our team designed them with love ...</p> --}}
                       <div class="box-buttons-slider position-relative wow animate__animated animate__zoomIn ppv" style="margin-left: 6rem;"> 
                         <div class="swiper-button-prev swiper-button-prev-style-1"></div>
