@@ -7984,11 +7984,14 @@ video::-webkit-media-controls {
 
 @media screen and (max-width: 767px) {
 
-  /* هذا سينفذ فقط عندما تكون الشاشة أصغر من 767 بكسل (حالة الجوال) */
+  mt-20 {
+    margin-top: 10px !important;
+}
+
   .home-div {
     position: relative;
-    padding : 3%;
-    top     : 0rem;
+    padding: 6%;
+    top: -6rem;
   }
 }
 
@@ -8025,8 +8028,8 @@ video::-webkit-media-controls {
   }
 
   .box-topics {
-    border-radius: 15px;
-    padding      : 21px;
+    border-radius: 46px;
+    padding: 20px;
   }
 }
 
@@ -8034,9 +8037,12 @@ video::-webkit-media-controls {
 @media only screen and (max-width: 600px) {
   .header-right {
     display: none;
-    /* تخفي شريط العنوان */
+
   }
 
+  video-container {
+    top: -6rem;
+}
 
   .header .main-header .header-logo {
     position: relative;
@@ -8066,7 +8072,7 @@ video::-webkit-media-controls {
     text-align: center;
     margin-bottom: 1rem;
     color: #ffffff;
-    right: 8%;
+    right: 1%;
   }
   .ppv {
     margin-left: 7rem !important;

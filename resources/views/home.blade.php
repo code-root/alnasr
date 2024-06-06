@@ -79,7 +79,7 @@
       </div>
 
 
-      <div style="padding: 2%;">
+      <div class="home-div">
         <h1 class="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" style="position: relative; color: #311557 !important; ">WHAT WE DO</h1>
             <h3 class="text-lg  wow animate__animated animate__fadeInUp" style="position: relative;right: -9px;top: -2px;font-family: Gilroy-Medium !important;">OUR SERVICES</h3>
             <div class="row mt-70 mb-50">
