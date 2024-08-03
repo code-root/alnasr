@@ -1,23 +1,31 @@
+<!doctype html>
+<html lang="en-US">
+<head>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="msapplication-TileColor" content="#0E0E0E">
-    <meta name="template-color" content="#0E0E0E">
-    <meta name="description" content="Index page">
-    <meta name="keywords" content="index, page">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets')}}/home/image/logo-27-26.png">
-    <link href="{{asset('assets')}}/home/css/style.css?v=2.0" rel="stylesheet">
-    <title>al-nasr</title>
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>Amazing - Home</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="author" content="bslthemes" />
 
-    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Epilogue%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900&amp;display=swap" type="text/css" media="all" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-    <script src="https://wp.alithemes.com/html/genz/demos/assets/js/vendors/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/bootstrap.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/magnific-popup.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/splitting.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/swiper.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/animate.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/jquery.pagepiling.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/css/style.css" type="text/css" media="all" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
