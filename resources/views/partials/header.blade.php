@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="HandheldFriendly" content="true">
-  <meta name="author" content="bslthemes" />
+  <meta name="author" content="amazing" />
 
   <!-- Fonts -->
   <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
@@ -15,14 +15,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
   <!-- CSS STYLES -->
-  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/bootstrap.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="{{asset('assets')}}/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/magnific-popup.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/splitting.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/swiper.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/animate.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="{{asset('assets')}}/css/vendors/jquery.pagepiling.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="{{asset('assets')}}/css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/home/css/vendors/bootstrap.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/home/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/home/css/vendors/magnific-popup.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/home/css/vendors/splitting.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/home/css/vendors/swiper.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/home/css/vendors/animate.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/home/css/vendors/jquery.pagepiling.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/home/css/style.css" type="text/css" media="all" />
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
