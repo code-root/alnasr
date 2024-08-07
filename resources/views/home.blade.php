@@ -13,7 +13,7 @@
 				</div>
 				<div class="container">
 					<h1 class="title amazing-text-white">
-						<span data-splitting data-amazing-scroll> We Make <br>Everything <span class="amazing-sep word">
+						<span data-splitting data-amazing-scroll> Amazing <br>Production <span class="amazing-sep word">
 								<i class="sep-img" style="background-image: url(assets/images/title_icon.svg);"></i>
 							</span>
 						</span>
