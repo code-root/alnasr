@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="{{asset('assets')}}/home/css/vendors/animate.css" type="text/css" media="all" />
   <link rel="stylesheet" href="{{asset('assets')}}/home/css/vendors/jquery.pagepiling.css" type="text/css" media="all" />
   <link rel="stylesheet" href="{{asset('assets')}}/home/css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{asset('assets')}}/home/css/amazing.css" type="text/css" media="all" />
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">

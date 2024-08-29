@@ -10,19 +10,12 @@
 						<source src="{{asset('assets')}}/home/images/stvideo.mp4" type="video/mp4">
 					</video>
 					<div class="ovrl" style="opacity: 0.25;"></div>
+					<img class="banar2"  src="{{asset('assets')}}/banar2.png"> 
+
 				</div>
 				<div class="container">
-					<h1 class="title amazing-text-white">
-						<span data-splitting data-amazing-scroll> Amazing <br>Production <span class="amazing-sep word">
-								<i class="sep-img" style="background-image: url(assets/images/title_icon.svg);"></i>
-							</span>
-						</span>
-					</h1>
-					<div class="text">
-						<div class="subtitle amazing-text-white">
-							<div data-splitting data-amazing-scroll> Creative studio at the <br> intersection of art, design <br> and technology. </div>
-						</div>
-					</div>
+					 <span style="color: white;font-size: 2rem;--word-index: 0;--line-index: 0;vertical-align: sub;">Advertising</span>
+					<h1 class="title amazing-text-white">Production </h1>
 					<a href="#" class="amazing-play-btn">
 						<span class="play-circles"></span>
 						<span class="play-lines">
@@ -47,24 +40,14 @@
 							<div class="amazing-service-grid-item amazing-hover-1">
 								<div class="image">
 									<a href="services.html">
-										<img decoding="async" src="{{asset('assets')}}/home/images/serv-icon1.png" alt="Creation" />
+										<img decoding="async" src="{{asset('assets')}}/home/images/serv-icon1.png" alt="Graphic Design " />
 									</a>
 								</div>
 								<h5 class="amazing-title-3">
 									<a href="services.html">
-										<span> Creation </span>
+										<span> Graphic Design  </span>
 									</a>
 								</h5>
-								<div class="amazing-text">
-									<div>
-										<p>Developing websites is about so much more than marketing. It’s also about aesthetics.</p>
-									</div>
-								</div>
-								<div class="amazing-bubble">
-									<div class="bubble-1"></div>
-									<div class="bubble-2"></div>
-									<div class="bubble-3"></div>
-								</div>
 							</div>
 						</div>
 
@@ -73,24 +56,14 @@
 							<div class="amazing-service-grid-item amazing-hover-1 active active--default">
 								<div class="image">
 									<a href="projects.html">
-										<img decoding="async" src="{{asset('assets')}}/home/images/serv-icon2.png" alt="Websites" />
+										<img decoding="async" src="{{asset('assets')}}/home/images/sales_6633509.png" alt="Digital Marketing " />
 									</a>
 								</div>
 								<h5 class="amazing-title-3">
 									<a href="projects.html">
-										<span> Websites </span>
+										<span> Digital Marketing </span>
 									</a>
 								</h5>
-								<div class="amazing-text">
-									<div>
-										<p>Developing websites is about so much more than marketing. It’s also about aesthetics.</p>
-									</div>
-								</div>
-								<div class="amazing-bubble">
-									<div class="bubble-1"></div>
-									<div class="bubble-2"></div>
-									<div class="bubble-3"></div>
-								</div>
 							</div>
 						</div>
 
@@ -99,24 +72,15 @@
 							<div class="amazing-service-grid-item amazing-hover-1">
 								<div class="image">
 									<a href="about-us.html">
-										<img decoding="async" src="{{asset('assets')}}/home/images/serv-icon3.png" alt="Studio" />
+										<img decoding="async" src="{{asset('assets')}}/home/images/teacher_3307318.png" alt="Education" />
 									</a>
 								</div>
 								<h5 class="amazing-title-3">
 									<a href="about-us.html">
-										<span> Studio </span>
+										<span> Education </span>
 									</a>
 								</h5>
-								<div class="amazing-text">
-									<div>
-										<p>Developing websites is about so much more than marketing. It’s also about aesthetics.</p>
-									</div>
-								</div>
-								<div class="amazing-bubble">
-									<div class="bubble-1"></div>
-									<div class="bubble-2"></div>
-									<div class="bubble-3"></div>
-								</div>
+						
 							</div>
 						</div>
 
@@ -388,6 +352,9 @@
 					<!-- Team items -->
 					<div class="row gap-row">
 
+
+						@foreach ($latestOurTeamMembers as $item )
+						@isset($item['image'][0]['url'])
 						<!--team item-->
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
 							<div class="amazing-team" data-amazing-overlay data-amazing-scroll>
@@ -395,161 +362,27 @@
 									<div class="desc">
 										<h5 class="title">
 											<a href="team-detail.html" class="amazing-lnk">
-												<span data-splitting data-amazing-scroll> Thomas Jackki </span>
+												<span data-splitting data-amazing-scroll> {{ $item->name }} </span>
 											</a>
 										</h5>
 										<div class="amazing-subtitle-1">
-											<span data-splitting data-amazing-scroll> UI &amp; UX Designer </span>
-										</div>
-										<div class="amazing-social-1">
-											<ul>
-												<li>
-													<a class="amazing-social-link amazing-hover-2" href="facebook.html" title="Fa" target="_blank">
-														<i aria-hidden="true" class="fab fa-facebook-f"></i>
-													</a>
-												</li>
-												<li>
-													<a class="amazing-social-link amazing-hover-2" href="linkedin.html" title="In" target="_blank">
-														<i aria-hidden="true" class="fab fa-linkedin-in"></i>
-													</a>
-												</li>
-											</ul>
+											<span data-splitting data-amazing-scroll> {{ $item->job_name }} </span>
 										</div>
 									</div>
 									<div class="image">
-										<a href="team-detail.html">
-											<img decoding="async" src="{{asset('assets')}}/home/images/team-2-t-min.png" width="350" height="530" alt="Thomas Jackki" />
-										</a>
+											<img decoding="async" src="/{{ $item['image'][0]['url'] }}" width="350" height="530" alt="Thomas Jackki" />
 									</div>
 									<div class="num amazing-text-white">
-										<span> T </span>
+										<span> {{ substr($item->name, 0, 1) }}  </span>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<!--team item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-							<div class="amazing-team" data-amazing-overlay data-amazing-scroll>
-								<div class="amazing-team-item amazing-hover-3">
-									<div class="desc">
-										<h5 class="title">
-											<a href="team-detail.html" class="amazing-lnk">
-												<span data-splitting data-amazing-scroll> Melanie Robinson </span>
-											</a>
-										</h5>
-										<div class="amazing-subtitle-1">
-											<span data-splitting data-amazing-scroll> Seo &amp; Marketing </span>
-										</div>
-										<div class="amazing-social-1">
-											<ul>
-												<li>
-													<a class="amazing-social-link amazing-hover-2" href="facebook.html" title="Fa" target="_blank">
-														<i aria-hidden="true" class="fab fa-facebook-f"></i>
-													</a>
-												</li>
-												<li>
-													<a class="amazing-social-link amazing-hover-2" href="linkedin.html" title="In" target="_blank">
-														<i aria-hidden="true" class="fab fa-linkedin-in"></i>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="image">
-										<a href="team-detail.html">
-											<img decoding="async" src="{{asset('assets')}}/home/images/team-6-t-min.png" width="350" height="530" alt="Melanie Robinson" />
-										</a>
-									</div>
-									<div class="num amazing-text-white">
-										<span> M </span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!--team item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-							<div class="amazing-team" data-amazing-overlay data-amazing-scroll>
-								<div class="amazing-team-item amazing-hover-3">
-									<div class="desc">
-										<h5 class="title">
-											<a href="team-detail.html" class="amazing-lnk">
-												<span data-splitting data-amazing-scroll> Steven Morrison </span>
-											</a>
-										</h5>
-										<div class="amazing-subtitle-1">
-											<span data-splitting data-amazing-scroll> Full-stack Developer </span>
-										</div>
-										<div class="amazing-social-1">
-											<ul>
-												<li>
-													<a class="amazing-social-link amazing-hover-2" href="facebook.html" title="Fa" target="_blank">
-														<i aria-hidden="true" class="fab fa-facebook-f"></i>
-													</a>
-												</li>
-												<li>
-													<a class="amazing-social-link amazing-hover-2" href="linkedin.html" title="In" target="_blank">
-														<i aria-hidden="true" class="fab fa-linkedin-in"></i>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="image">
-										<a href="team-detail.html">
-											<img decoding="async" src="{{asset('assets')}}/home/images/team-1-t-min.png" width="350" height="530" alt="Steven Morrison" />
-										</a>
-									</div>
-									<div class="num amazing-text-white">
-										<span> S </span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!--team item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-							<div class="amazing-team" data-amazing-overlay data-amazing-scroll>
-								<div class="amazing-team-item amazing-hover-3">
-									<div class="desc">
-										<h5 class="title">
-											<a href="team-detail.html" class="amazing-lnk">
-												<span data-splitting data-amazing-scroll> Charlotte Johnson </span>
-											</a>
-										</h5>
-										<div class="amazing-subtitle-1">
-											<span data-splitting data-amazing-scroll> Seo &amp; Copywriter </span>
-										</div>
-										<div class="amazing-social-1">
-											<ul>
-												<li>
-													<a class="amazing-social-link amazing-hover-2" href="facebook.html" title="Fa" target="_blank">
-														<i aria-hidden="true" class="fab fa-facebook-f"></i>
-													</a>
-												</li>
-												<li>
-													<a class="amazing-social-link amazing-hover-2" href="linkedin.html" title="In" target="_blank">
-														<i aria-hidden="true" class="fab fa-linkedin-in"></i>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="image">
-										<a href="team-detail.html">
-											<img decoding="async" src="{{asset('assets')}}/home/images/team-7-t-min.png" width="350" height="530" alt="Charlotte Johnson" />
-										</a>
-									</div>
-									<div class="num amazing-text-white">
-										<span> E </span>
-									</div>
-								</div>
-							</div>
-						</div>
+						@endisset
+						@endforeach
 
 					</div>
-					
 				</div>
 			</section>
 
@@ -819,96 +652,32 @@
 
 					<!-- Blog items -->
 					<div class="row">
-
+						@isset($latestBlogs)
+						@foreach ($latestBlogs as $item )
+						@isset($item['image'][0]['url'])
 						<!--blog item-->
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 							<div class="amazing-blog-item">
 								<div class="image" data-amazing-overlay data-amazing-scroll>
 									<a href="blog-detail.html">
-										<img decoding="async" src="{{asset('assets')}}/home/images/posts3-1000x667.jpg" width="400" height="240" alt="Usability Secrets to Create Interfaces" />
+										<img decoding="async" src="/{{ $item['image'][0]['url'] }}" width="400" height="240" alt="{{  $item->name }}" />
 									</a>
 								</div>
 								<div class="desc">
 									<div class="info">
-										<div class="date">March 25, 2023</div>Branding
+										<div class="date">{{ $item->updated_at }}</div>{{ $item->category->name ?? '' }}
 									</div>
 									<h5 class="title">
 										<a href="blog-detail.html">
-											<span>Usability Secrets to Create Interfaces</span>
+											<span>{{  $item->name }}</span>
 										</a>
 									</h5>
-									<div class="amazing-text">
-										<div>
-											<p>Ambleton: Behind the Branding of High Calgary&#8217;s Community Most innovative and successful builders and real estate&#8230; <br />
-												<a href="blog-detail.html" class="amazing-btn amazing-hover-btn">
-													<span>Read more</span>
-												</a>
-											</p>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
-
-						<!--blog item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-							<div class="amazing-blog-item">
-								<div class="image" data-amazing-overlay data-amazing-scroll>
-									<a href="blog-detail.html">
-										<img decoding="async" src="{{asset('assets')}}/home/images/post1-1000x667.jpg" width="400" height="240" alt="The Main Thing For The Web Designer" />
-									</a>
-								</div>
-								<div class="desc">
-									<div class="info">
-										<div class="date">March 18, 2023</div>Design
-									</div>
-									<h5 class="title">
-										<a href="blog-detail.html">
-											<span>The Main Thing For The Web Designer</span>
-										</a>
-									</h5>
-									<div class="amazing-text">
-										<div>
-											<p>Ambleton: Behind the Branding of High Calgary&#8217;s Community Most innovative and successful builders and real estate&#8230; <br />
-												<a href="blog-detail.html" class="amazing-btn amazing-hover-btn">
-													<span>Read more</span>
-												</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!--blog item-->
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-							<div class="amazing-blog-item">
-								<div class="image" data-amazing-overlay data-amazing-scroll>
-									<a href="blog-detail.html">
-										<img decoding="async" src="{{asset('assets')}}/home/images/post4-1000x667.jpg" width="400" height="240" alt="How to Do Your First Business Project" />
-									</a>
-								</div>
-								<div class="desc">
-									<div class="info">
-										<div class="date">March 10, 2023</div>News
-									</div>
-									<h5 class="title">
-										<a href="blog-detail.html">
-											<span>How to Do Your First Business Project</span>
-										</a>
-									</h5>
-									<div class="amazing-text">
-										<div>
-											<p>Ambleton: Behind the Branding of High Calgary&#8217;s Community Most innovative and successful builders and real estate&#8230; <br />
-												<a href="blog-detail.html" class="amazing-btn amazing-hover-btn">
-													<span>Read more</span>
-												</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						@endisset
+						@endforeach
+						@endisset
 						
 					</div>
 
@@ -942,102 +711,21 @@
 					<!-- Brands items -->
 					<div class="row gap-row">
 
-						<!--brand item-->
+						@isset($ourClients)
+                        @foreach ($ourClients as $item)
+                            @isset($item['image'][0]['url'])
+										<!--brand item-->
 						<div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
 							<div class="amazing-brands amazing-hover-3 amazing-hover-label" data-amazing-overlay data-amazing-scroll>
-								<a target="_blank" href="http://google.com/">
 									<span class="image">
-										<img decoding="async" src="{{asset('assets')}}/home/images/brand1.png" width="285" height="200" alt="Visit Website" />
+										<img decoding="async" src="{{ $item['image'][0]['url'] }}" width="285" height="200" alt="Visit Website" />
 									</span>
-									<span class="label amazing-white-black"> Visit Website </span>
-								</a>
+									<span class="label amazing-white-black"> {{ $item->name }} </span>
 							</div>
 						</div>
-
-						<!--brand item-->
-						<div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
-							<div class="amazing-brands amazing-hover-3 amazing-hover-label" data-amazing-overlay data-amazing-scroll>
-								<a target="_blank" href="http://google.com/">
-									<span class="image">
-										<img decoding="async" src="{{asset('assets')}}/home/images/brand2.png" width="285" height="200" alt="Visit Website" />
-									</span>
-									<span class="label amazing-white-black"> Visit Website </span>
-								</a>
-							</div>
-						</div>
-
-						<!--brand item-->
-						<div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
-							<div class="amazing-brands amazing-hover-3 amazing-hover-label" data-amazing-overlay data-amazing-scroll>
-								<a target="_blank" href="http://google.com/">
-									<span class="image">
-										<img decoding="async" src="{{asset('assets')}}/home/images/brand3.png" width="285" height="200" alt="Visit Website" />
-									</span>
-									<span class="label amazing-white-black"> Visit Website </span>
-								</a>
-							</div>
-						</div>
-
-						<!--brand item-->
-						<div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
-							<div class="amazing-brands amazing-hover-3 amazing-hover-label" data-amazing-overlay data-amazing-scroll>
-								<a target="_blank" href="http://google.com/">
-									<span class="image">
-										<img decoding="async" src="{{asset('assets')}}/home/images/brand4.png" width="285" height="200" alt="Visit Website" />
-									</span>
-									<span class="label amazing-white-black"> Visit Website </span>
-								</a>
-							</div>
-						</div>
-
-						<!--brand item-->
-						<div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
-							<div class="amazing-brands amazing-hover-3 amazing-hover-label" data-amazing-overlay data-amazing-scroll>
-								<a target="_blank" href="http://google.com/">
-									<span class="image">
-										<img decoding="async" src="{{asset('assets')}}/home/images/brand5.png" width="285" height="200" alt="Visit Website" />
-									</span>
-									<span class="label amazing-white-black"> Visit Website </span>
-								</a>
-							</div>
-						</div>
-
-						<!--brand item-->
-						<div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
-							<div class="amazing-brands amazing-hover-3 amazing-hover-label" data-amazing-overlay data-amazing-scroll>
-								<a target="_blank" href="http://google.com/">
-									<span class="image">
-										<img decoding="async" src="{{asset('assets')}}/home/images/brand6.png" width="285" height="200" alt="Visit Website" />
-									</span>
-									<span class="label amazing-white-black"> Visit Website </span>
-								</a>
-							</div>
-						</div>
-
-						<!--brand item-->
-						<div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
-							<div class="amazing-brands amazing-hover-3 amazing-hover-label" data-amazing-overlay data-amazing-scroll>
-								<a target="_blank" href="http://google.com/">
-									<span class="image">
-										<img decoding="async" src="{{asset('assets')}}/home/images/brand7.png" width="285" height="200" alt="Visit Website" />
-									</span>
-									<span class="label amazing-white-black"> Visit Website </span>
-								</a>
-							</div>
-						</div>
-
-						<!--brand item-->
-						<div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
-							<div class="amazing-brands amazing-hover-3 amazing-hover-label" data-amazing-overlay data-amazing-scroll>
-								<a target="_blank" href="http://google.com/">
-									<span class="image">
-										<img decoding="async" src="{{asset('assets')}}/home/images/brand2.png" width="285" height="200" alt="Visit Website" />
-									</span>
-									<span class="label amazing-white-black"> Visit Website </span>
-								</a>
-							</div>
-						</div>
-						
+                            @endisset
+                        @endforeach
+                    @endisset
 					</div>
 
 				</div>
