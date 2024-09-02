@@ -24,8 +24,7 @@
   <link rel="stylesheet" href="{{asset('assets')}}/home/css/vendors/jquery.pagepiling.css" type="text/css" media="all" />
   <link rel="stylesheet" href="{{asset('assets')}}/home/css/style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="{{asset('assets')}}/home/css/amazing.css" type="text/css" media="all" />
-
-  <!-- Favicon -->
+  <link href="https://db.onlinewebfonts.com/c/1064f0ad1cb65fdab43bb592ddd8aa91?family=Gilroy-Bold" rel="stylesheet">  <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 

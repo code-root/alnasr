@@ -438,25 +438,32 @@
                                 .text();
                         e(this).append("<span>" + i + "</span>");
                     });
-        }),
-        e(".amazing-play-btn").on("click", function () {
-            return (
-                e(this).parent().parent().find("video").prop("muted")
-                    ? (e(this)
-                          .parent()
-                          .parent()
-                          .find("video")
-                          .prop("muted", !1),
-                      e(this).addClass("active"))
-                    : (e(this)
-                          .parent()
-                          .parent()
-                          .find("video")
-                          .prop("muted", !0),
-                      e(this).removeClass("active")),
-                !1
-            );
-        }),
+
+        }),e(".amazing-play-btn").on("click", function () {
+            // تحديد URL الصوت
+            var audioUrl = "/assets/bumlbee-action-sport-intro-176526.mp3"; // استبدل هذا بالرابط الفعلي للصوت
+        
+            // إنشاء عنصر audio إذا لم يكن موجودًا
+            var audioElement = e(this).parent().find("audio");
+            if (audioElement.length === 0) {
+                audioElement = e("<audio>").attr("src", audioUrl).appendTo(e(this).parent());
+            }
+        
+            // التحكم في تشغيل أو إيقاف الصوت
+            if (audioElement.prop("paused")) {
+                // تشغيل الصوت
+                audioElement.trigger("play");
+                e(this).addClass("active");
+            } else {
+                // إيقاف الصوت
+                audioElement.trigger("pause");
+                e(this).removeClass("active");
+            }
+        
+            // منع السلوك الافتراضي للرابط أو الزر
+            return false;
+        });
+        
         e(".amazing-service-grid-item.active--default").each(function () {
             e(this)
                 .closest(".amazing-services-grid-fw")

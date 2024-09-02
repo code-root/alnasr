@@ -23,8 +23,8 @@
 							<!-- Logo -->
 							<div class="amazing-logo-image" style="max-width: 70px">
 								<a href="index-2.html">
-									<img src="assets/images/logo-black.png" alt="amazing" />
-									<img class="logo--white" src="assets/images/logo-main.png" alt="amazing" />
+									<img src="/logo.png" alt="amazing" />
+									<img class="logo--white" src="/logo.png" alt="amazing" />
 								</a>
 							</div>
 
@@ -135,19 +135,6 @@
 									</div>
 								</div>
 							</div>
-
-						</div>
-						<div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-3 align-self-center align-right">
-
-							<!-- Button -->
-							<a class="amazing-head-btn amazing-hover-btn" href="projects.html">
-								<span>
-									<span class="amazing-lnk lnk--active">Showcase</span>
-								</span>
-								<i class="arrow">
-									<span></span>
-								</i>
-							</a>
 
 						</div>
 					</div>

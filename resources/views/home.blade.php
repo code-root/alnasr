@@ -14,7 +14,7 @@
 
 				</div>
 				<div class="container">
-					 <span style="color: white;font-size: 2rem;--word-index: 0;--line-index: 0;vertical-align: sub;">Advertising</span>
+					 <h1 style="font-weight: 100 !important;color: white;font-size: 6rem;--word-index: 0;--line-index: 0;vertical-align: sub;">Advertisin</span>
 					<h1 class="title amazing-text-white">Production </h1>
 					<a href="#" class="amazing-play-btn">
 						<span class="play-circles"></span>
@@ -48,6 +48,12 @@
 										<span> Graphic Design  </span>
 									</a>
 								</h5>
+						
+								<div class="onovo-bubble">
+									<div class="bubble-1"></div>
+									<div class="bubble-2"></div>
+									<div class="bubble-3"></div>
+								</div>
 							</div>
 						</div>
 
@@ -64,6 +70,11 @@
 										<span> Digital Marketing </span>
 									</a>
 								</h5>
+								<div class="onovo-bubble">
+									<div class="bubble-1"></div>
+									<div class="bubble-2"></div>
+									<div class="bubble-3"></div>
+								</div>
 							</div>
 						</div>
 
@@ -80,7 +91,16 @@
 										<span> Education </span>
 									</a>
 								</h5>
-						
+								{{-- <div class="onovo-text"> --}}
+									{{-- <div>
+										<p>Developing websites is about so much more than marketing. It’s also about aesthetics.</p>
+									</div>
+								</div> --}}
+								<div class="onovo-bubble">
+									<div class="bubble-1"></div>
+									<div class="bubble-2"></div>
+									<div class="bubble-3"></div>
+								</div>
 							</div>
 						</div>
 
@@ -104,7 +124,7 @@
 											<span> Welcome to amazing </span>
 										</div>
 										<h2 class="amazing-title-2">
-											<span> A Design Agency <br>Delivering Success by <br>Winning Hearts </span>
+											<span> Production agency <br>Achieving success through <br>Win hearts </span>
 										</h2>
 									</div>
 
@@ -159,7 +179,7 @@
 
 				<!-- Ticker swiper -->
 				<div class="amazing-ticker-slider gap-top-90 gap-bottom-100">
-					<div class="swiper-container js-ticker-slider" data-autoplay="12000">
+					<div class="swiper-container js-ticker-slider" data-autoplay="1000">
 						<div class="swiper-wrapper">
 
 							<!--slide-->

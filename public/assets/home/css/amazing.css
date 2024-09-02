@@ -1,6 +1,30 @@
 .banar2 {
-    width: 7%;
+    width: 19%;
     position: relative;
-    right: -81%;
+    right: -76%;
     top: 17rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .banar2 {
+        width: 19%;
+        position: relative;
+        right: -35%;
+        top: 37rem;
+    }
+  }
+
+  @media (max-width:767px) {
+    .amazing-hero .title {
+        font-size: 60px
+    }
+
+}
+
+
+  .amazing-hero .title {
+    margin: 0;
+    font-size: 133px;
+    font-weight: 200;
 }
