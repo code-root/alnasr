@@ -39,17 +39,21 @@
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
 							<div class="amazing-service-grid-item amazing-hover-1">
 								<div class="image">
-									<a href="services.html">
+									<a href="#">
 										<img decoding="async" src="{{asset('assets')}}/home/images/serv-icon1.png" alt="Graphic Design " />
 									</a>
 								</div>
 								<h5 class="amazing-title-3">
-									<a href="services.html">
+									<a href="#">
 										<span> Graphic Design  </span>
 									</a>
 								</h5>
-						
-								<div class="onovo-bubble">
+								<div class="amazing-text"> 
+									<div>
+									   <p>Use all creative designs for social media, publication designs, website designs, and designs that highlight the beauty of your activity for the marketing goal.</p>
+								   </div>
+							   </div> 
+								<div class="amazing-bubble">
 									<div class="bubble-1"></div>
 									<div class="bubble-2"></div>
 									<div class="bubble-3"></div>
@@ -61,16 +65,21 @@
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
 							<div class="amazing-service-grid-item amazing-hover-1 active active--default">
 								<div class="image">
-									<a href="projects.html">
+									<a href="#">
 										<img decoding="async" src="{{asset('assets')}}/home/images/sales_6633509.png" alt="Digital Marketing " />
 									</a>
 								</div>
 								<h5 class="amazing-title-3">
-									<a href="projects.html">
+									<a href="#">
 										<span> Digital Marketing </span>
 									</a>
 								</h5>
-								<div class="onovo-bubble">
+								<div class="amazing-text"> 
+									<div>
+									   <p>Creating courses in all fields, such as graphics, programming, montage, 3D, and all modern developments</p>
+								   </div>
+							   </div> 
+								<div class="amazing-bubble">
 									<div class="bubble-1"></div>
 									<div class="bubble-2"></div>
 									<div class="bubble-3"></div>
@@ -82,20 +91,20 @@
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-center">
 							<div class="amazing-service-grid-item amazing-hover-1">
 								<div class="image">
-									<a href="about-us.html">
+									<a href="#">
 										<img decoding="async" src="{{asset('assets')}}/home/images/teacher_3307318.png" alt="Education" />
 									</a>
 								</div>
 								<h5 class="amazing-title-3">
-									<a href="about-us.html">
+									<a href="#">
 										<span> Education </span>
 									</a>
 								</h5>
-								{{-- <div class="onovo-text"> --}}
-									{{-- <div>
+								 <div class="onovo-text"> 
+									 <div>
 										<p>Developing websites is about so much more than marketing. It’s also about aesthetics.</p>
 									</div>
-								</div> --}}
+								</div> 
 								<div class="onovo-bubble">
 									<div class="bubble-1"></div>
 									<div class="bubble-2"></div>
@@ -151,7 +160,7 @@
 								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 									<h5 class="text-uppercase">Our Goal</h5>
 									<p>Our goal is to deliver amazing experiences that make people talk, and build strategic value for brands, tech, entertainment.</p>
-									<a class="amazing-btn amazing-hover-btn" href="about-us.html">
+									<a class="amazing-btn amazing-hover-btn" href="#">
 										<i class="arrow"><span></span></i>
 										<span> More About Us </span>
 									</a>
@@ -179,13 +188,12 @@
 
 				<!-- Ticker swiper -->
 				<div class="amazing-ticker-slider gap-top-90 gap-bottom-100">
-					<div class="swiper-container js-ticker-slider" data-autoplay="1000">
+					<div class="swiper-container js-ticker-slider" data-autoplay="1999">
 						<div class="swiper-wrapper">
-
 							<!--slide-->
 							<div class="swiper-slide">
 								<h5 class="title amazing-text-white">
-									<a href="service-detail.html">
+									<a href="#">
 										<span> - Brand Strategy </span>
 									</a>
 								</h5>
@@ -194,7 +202,7 @@
 							<!--slide-->
 							<div class="swiper-slide">
 								<h5 class="title amazing-text-white">
-									<a href="service-detail.html">
+									<a href="#">
 										<span> - Creative Direction </span>
 									</a>
 								</h5>
@@ -203,7 +211,7 @@
 							<!--slide-->
 							<div class="swiper-slide">
 								<h5 class="title amazing-text-white">
-									<a href="service-detail.html">
+									<a href="#">
 										<span> - Native and Web Apps </span>
 									</a>
 								</h5>
@@ -212,7 +220,7 @@
 							<!--slide-->
 							<div class="swiper-slide">
 								<h5 class="title amazing-text-white">
-									<a href="service-detail.html">
+									<a href="#">
 										<span> - Machine Learning / AI </span>
 									</a>
 								</h5>
@@ -227,7 +235,7 @@
 			<!-- amazing Showcase -->
 			<section class="amazing-section gap-bottom-140" style="border-bottom: 1px solid #555;">
 				<div class="container">
-
+			
 					<!-- Heading -->
 					<div class="amazing-heading gap-bottom-40">
 						<div class="amazing-subtitle-1">
@@ -237,123 +245,169 @@
 							<span> Studio Showcase </span>
 						</h2>
 					</div>
-
+			
 					<!-- Showcase -->
 					<div class="amazing-showcase gap-bottom-40">
 						<div class="img-circle amazing-circle-move"></div>
-
+			
 						<!-- Showcase items -->
 						<div class="amazing-showcase-items">
-
-							<!--showcase item-->
+			
+							<!-- Social media designs Showcase item -->
 							<div class="amazing-showcase-item">
 								<div class="category">
-									<a href="project-detail.html">
+									<a href="#">
 										<span data-splitting data-amazing-scroll>
-											<span>Branding</span>
+											<span>DESIGN</span>
 										</span>
 									</a>
 								</div>
 								<h3 class="title">
-									<a href="project-detail.html">
-										<span class="amazing-lnk" data-splitting data-amazing-scroll> Museums Art Concept </span>
+									<a href="#">
+										<span class="amazing-lnk" data-splitting data-amazing-scroll> Social Media Designs </span>
 									</a>
 								</h3>
-								<div class="image" data-amazing-overlay data-amazing-scroll>
-									<span class="img" style="background-image: url(assets/images/project-n01-3-1200x900.jpg);"></span>
-								</div>
-							</div>
-
-							<!--showcase item-->
-							<div class="amazing-showcase-item">
-								<div class="category">
-									<a href="project-detail.html">
-										<span data-splitting data-amazing-scroll>
-											<span>Marketing</span>
-										</span>
-									</a>
-								</div>
-								<h3 class="title">
-									<a href="project-detail.html">
-										<span class="amazing-lnk" data-splitting data-amazing-scroll> Market Economy Graphics </span>
-									</a>
-								</h3>
-								<div class="image" data-amazing-overlay data-amazing-scroll>
-									<span class="img" style="background-image: url(assets/images/project-2-2-1200x982.jpg);"></span>
-								</div>
-							</div>
-
-							<!--showcase item-->
-							<div class="amazing-showcase-item">
-								<div class="category">
-									<a href="project-detail.html">
-										<span data-splitting data-amazing-scroll>
-											<span>Design</span>
-										</span>
-									</a>
-								</div>
-								<h3 class="title">
-									<a href="project-detail.html">
-										<span class="amazing-lnk" data-splitting data-amazing-scroll> Headphones 3D Rendering </span>
-									</a>
-								</h3>
+								{{-- <p class="description">Creating compelling designs for social media platforms to enhance engagement and brand visibility.</p> --}}
 								<div class="image" data-amazing-overlay data-amazing-scroll>
 									<span class="img" style="background-image: url(assets/images/project-2-1200x988.jpg);"></span>
 								</div>
 							</div>
-
-							<!--showcase item-->
+			
+							<!-- Augmented reality design and animation Showcase item -->
 							<div class="amazing-showcase-item">
 								<div class="category">
-									<a href="project-detail.html">
+									<a href="#">
 										<span data-splitting data-amazing-scroll>
-											<span>Design</span>
+											<span>MOTION 3D</span>
 										</span>
 									</a>
 								</div>
 								<h3 class="title">
-									<a href="project-detail.html">
-										<span class="amazing-lnk" data-splitting data-amazing-scroll> Business Card Logo </span>
+									<a href="#">
+										<span class="amazing-lnk" data-splitting data-amazing-scroll> Augmented Reality Design and Animation </span>
 									</a>
 								</h3>
+								{{-- <p class="description">Innovative AR designs and animations that blend the digital and physical worlds.</p> --}}
 								<div class="image" data-amazing-overlay data-amazing-scroll>
-									<span class="img" style="background-image: url(assets/images/project-4.jpg);"></span>
+									<span class="img" style="background-image: url(assets/images/project-5-1200x800.jpg);"></span>
 								</div>
 							</div>
-
-							<!--showcase item-->
+			
+							<!-- Animation design and animation Showcase item -->
 							<div class="amazing-showcase-item">
 								<div class="category">
-									<a href="project-detail.html">
+									<a href="#">
 										<span data-splitting data-amazing-scroll>
-											<span>Interactive</span>
+											<span>MOTION GRAPHIC</span>
 										</span>
 									</a>
 								</div>
 								<h3 class="title">
-									<a href="project-detail.html">
-										<span class="amazing-lnk" data-splitting data-amazing-scroll> Flower Store Mobile App </span>
+									<a href="#">
+										<span class="amazing-lnk" data-splitting data-amazing-scroll> Animation Design and Animation </span>
 									</a>
 								</h3>
+								{{-- <p class="description">High-quality animation designs that bring stories to life through motion graphics.</p> --}}
 								<div class="image" data-amazing-overlay data-amazing-scroll>
-									<span class="img" style="background-image: url(assets/images/project-3-1200x750.jpg);"></span>
+									<span class="img" style="background-image: url(assets/images/project-6-1200x800.jpg);"></span>
 								</div>
 							</div>
-
+			
+							<!-- Creating websites and applications Showcase item -->
+							<div class="amazing-showcase-item">
+								<div class="category">
+									<a href="#">
+										<span data-splitting data-amazing-scroll>
+											<span>BROGRAMMING</span>
+										</span>
+									</a>
+								</div>
+								<h3 class="title">
+									<a href="#">
+										<span class="amazing-lnk" data-splitting data-amazing-scroll> Creating Websites and Applications </span>
+									</a>
+								</h3>
+								{{-- <p class="description">Development of interactive and user-friendly websites and mobile applications.</p> --}}
+								<div class="image" data-amazing-overlay data-amazing-scroll>
+									<span class="img" style="background-image: url(assets/images/project-7-1200x800.jpg);"></span>
+								</div>
+							</div>
+			
+							<!-- Marketing through psychology Showcase item -->
+							<div class="amazing-showcase-item">
+								<div class="category">
+									<a href="#">
+										<span data-splitting data-amazing-scroll>
+											<span>PSYCHOLOGY</span>
+										</span>
+									</a>
+								</div>
+								<h3 class="title">
+									<a href="#">
+										<span class="amazing-lnk" data-splitting data-amazing-scroll> Marketing through Psychology </span>
+									</a>
+								</h3>
+								{{-- <p class="description">Utilizing psychological principles to create more effective marketing strategies.</p> --}}
+								<div class="image" data-amazing-overlay data-amazing-scroll>
+									<span class="img" style="background-image: url(assets/images/project-8-1200x800.jpg);"></span>
+								</div>
+							</div>
+			
+							<!-- Interior and exterior decoration design Showcase item -->
+							<div class="amazing-showcase-item">
+								<div class="category">
+									<a href="#">
+										<span data-splitting data-amazing-scroll>
+											<span>DECORATION</span>
+										</span>
+									</a>
+								</div>
+								<h3 class="title">
+									<a href="#">
+										<span class="amazing-lnk" data-splitting data-amazing-scroll> Interior & Exterior Decoration Design </span>
+									</a>
+								</h3>
+								{{-- <p class="description">Designing aesthetic and functional interiors and exteriors that reflect the client's vision.</p> --}}
+								<div class="image" data-amazing-overlay data-amazing-scroll>
+									<span class="img" style="background-image: url(assets/images/project-9-1200x800.jpg);"></span>
+								</div>
+							</div>
+			
+							<!-- E-marketing to increase interaction on platforms Showcase item -->
+							<div class="amazing-showcase-item">
+								<div class="category">
+									<a href="#">
+										<span data-splitting data-amazing-scroll>
+											<span>MARKETING</span>
+										</span>
+									</a>
+								</div>
+								<h3 class="title">
+									<a href="#">
+										<span class="amazing-lnk" data-splitting data-amazing-scroll> E-Marketing to Increase Interaction on Platforms </span>
+									</a>
+								</h3>
+								{{-- <p class="description">Strategies to boost engagement and interaction on digital platforms through effective e-marketing.</p> --}}
+								<div class="image" data-amazing-overlay data-amazing-scroll>
+									<span class="img" style="background-image: url(assets/images/project-2-2-1200x982.jpg);"></span>
+								</div>
+							</div>
+			
 						</div>
-
+			
 					</div>
-
+			
 					<!-- Button -->
-					<a class="amazing-btn amazing-hover-btn" href="projects.html">
+					<a class="amazing-btn amazing-hover-btn" href="#">
 						<i class="arrow">
 							<span></span>
 						</i>
 						<span> All Projects </span>
 					</a>
-
+			
 				</div>
 			</section>
+			
 
 			<!-- amazing Team -->
 			<section class="amazing-section gap-top-140 gap-bottom-140">
@@ -381,7 +435,7 @@
 								<div class="amazing-team-item amazing-hover-3">
 									<div class="desc">
 										<h5 class="title">
-											<a href="team-detail.html" class="amazing-lnk">
+											<a href="#" class="amazing-lnk">
 												<span data-splitting data-amazing-scroll> {{ $item->name }} </span>
 											</a>
 										</h5>
@@ -679,7 +733,7 @@
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 							<div class="amazing-blog-item">
 								<div class="image" data-amazing-overlay data-amazing-scroll>
-									<a href="blog-detail.html">
+									<a href="#">
 										<img decoding="async" src="/{{ $item['image'][0]['url'] }}" width="400" height="240" alt="{{  $item->name }}" />
 									</a>
 								</div>
@@ -688,7 +742,7 @@
 										<div class="date">{{ $item->updated_at }}</div>{{ $item->category->name ?? '' }}
 									</div>
 									<h5 class="title">
-										<a href="blog-detail.html">
+										<a href="#">
 											<span>{{  $item->name }}</span>
 										</a>
 									</h5>
@@ -703,7 +757,7 @@
 
 					<!-- Button -->
 					<div class="align-center">
-						<a class="amazing-btn amazing-hover-btn" href="blog.html">
+						<a class="amazing-btn amazing-hover-btn" href="/">
 							<i class="arrow">
 								<span></span>
 							</i>
