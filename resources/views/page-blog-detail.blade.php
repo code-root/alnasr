@@ -29,7 +29,7 @@
 
       <!-- Image -->
       <div class="amazing-post-pic" data-amazing-overlay="" data-amazing-scroll="" data-scroll="in">
-        <img src="assets/images/posts3.jpg" alt="Usability Secrets to Create Interfaces">
+        <img src="/{{ $blog['image'][0]['url'] }}" alt="Usability Secrets to Create Interfaces">
       <div class="amazing-overlay"></div></div>
 
       <!-- Post-->

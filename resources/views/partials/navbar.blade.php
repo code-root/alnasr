@@ -19,7 +19,7 @@
 						<div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-3 align-self-center">
 							<!-- Logo -->
 							<div class="amazing-logo-image" style="max-width: 70px">
-								<a href="index-2.html">
+								<a href="/">
 									<img src="/logo.png" alt="amazing" />
 									<img class="logo--white" src="/logo.png" alt="amazing" />
 								</a>
