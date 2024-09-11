@@ -200,8 +200,11 @@ Auth::routes();
         Route::post('/services/store', [OrderController::class, 'store'])->name('services.store');
 
 
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::get('/', [App\Http\Controllers\CategoryController::class, 'homePage'])->name('homePage');
-    Route::get('/contact-us', [App\Http\Controllers\CategoryController::class, 'contact_us'])->name('contact_us');
-    Route::get('/portfolio', [App\Http\Controllers\CategoryController::class, 'portfolio'])->name('portfolio');
-    Route::get('/blog', [App\Http\Controllers\CategoryController::class, 'blog'])->name('blogs.index');
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/', [CategoryController::class, 'homePage'])->name('homePage');
+    Route::get('/contact-us', [CategoryController::class, 'contact_us'])->name('contact_us');
+    Route::get('/about', [CategoryController::class, 'about'])->name('about');
+    Route::get('/services', [CategoryController::class, 'services'])->name('page-services');
+    Route::get('/blog', [BlogController::class, 'blog'])->name('blogs.index');
+    Route::get('/blog-detail/{NameBlog}', [BlogController::class, 'blogDetailByName'])->name('blogs.name');
+    

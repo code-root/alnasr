@@ -10,10 +10,29 @@ use Illuminate\Http\Request;
 
 class BlogController extends Controller {
 
+
+    public function  blog () {
+        $blog = Blog::with(['image', 'category' , 'SubCategory' , 'users'])->latest()->take(10)->get();
+        return view('page-blog'
+        , compact(
+            'blog',
+        ));
+    }
+
+    public function blogDetailByName ($blogName) {
+        $categories = Category::with(['image'])->get(); // افتراضي
+        $popularPosts = Blog::with(['image', 'category', 'SubCategory', 'users'])->orderBy('id', 'desc')->take(10)->get();
+            $blog = Blog::with(['image', 'category', 'SubCategory', 'users'])->where('name', 'like' , "%$blogName%")->first();
+
+        return view('page-blog-detail', compact('blog', 'categories', 'popularPosts'));
+    }
+
+
     public function index(Request $request){
         $data =  Blog::with(['image', 'category' , 'SubCategory' , 'users'])->get();
         return view('dashboard.blogs.index')->with('blog',$data);
     }
+  
     public function blog_id($categoryName, $blog) {
         $categories = Category::with(['image'])->get(); // افتراضي
         $popularPosts = Blog::with(['image', 'category', 'SubCategory', 'users'])

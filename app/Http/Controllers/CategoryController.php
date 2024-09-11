@@ -15,22 +15,22 @@ use Illuminate\Support\Facades\DB;
 class CategoryController extends Controller
 {
 
-    public function  blog () {
 
-    }
-
-    public function portfolio ( ) {
+    public function services ( ) {
         $projects = Projects::with(['image', 'category' , 'SubCategory' , 'user'])->where('subCategory_id','=' , 0)->latest()->take(12)->get();
         $category = Category::get();
         $services =  Service::with(['category'])->latest()->take(3)->get();
 
-        return view('page-about'
+        return view('page-services'
         , compact(
             'projects',
             'category',
             'services',
         ));
+    }
 
+    public function about ( ) {
+        return view('page-about');
     }
 
     public function contact_us () {

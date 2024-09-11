@@ -36,9 +36,10 @@
 										<div class="amazing-menu">
 											<ul class="amazing-menu-nav">
 											<li><a class="amazing-lnk lnk--active" href="/">Home</a></li>
-											<li><a class="amazing-lnk lnk--active" href="/About">About</a></li>
-											<li><a class="amazing-lnk lnk--active" href="/Vision">Vision</a></li>
-											<li><a class="amazing-lnk lnk--active" href="/Mission">Mission</a></li>
+											<li><a class="amazing-lnk lnk--active" href="{{ route('about') }}">About</a></li>
+											<li><a class="amazing-lnk lnk--active" href="{{ route('page-services') }}">Services</a></li>
+											<li><a class="amazing-lnk lnk--active" href="/portfolio">Portfilo</a></li>
+											<li><a class="amazing-lnk lnk--active" href="{{ route('blogs.index') }}">Blog</a></li>
 											<li><a class="amazing-lnk lnk--active" href="{{ route('contact_us') }}">Contact Us</a></li>
 											
 											</ul>
