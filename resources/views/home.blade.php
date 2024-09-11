@@ -593,8 +593,10 @@
 					<!--video-->
 					<div class="amazing-video" data-amazing-overlay data-amazing-scroll>
 						<div class="image" style="background-image: url(assets/images/posts1.jpg);"></div>
-						<iframe class="js-video-iframe" data-src="https://www.youtube.com/embed/Gu6z6kIukgg?showinfo=0&amp;rel=0&amp;autoplay=1"></iframe>
-						<div class="play amazing-circle-text">
+							<video class="js-video-iframe" controls>
+								<source src="/assets/intro.mp4">
+							  </video>
+							<div class="play amazing-circle-text">
 							<div class="arrow"></div>
 							<div class="label amazing-text-black amazing-circle-text-label"> Play Video - Play Video - Play Video - </div>
 						</div>
