@@ -77,7 +77,7 @@
                                                             @if ($item['image'][0]['status'] == 'video')
                                                                 <video width="100%" height="100%" controls autoplay loop
                                                                     muted
-                                                                    style="position: relative;border-radius: 19px !important;">
+                                                                    style="position: relative;">
                                                                     <source src="/{{ $item['image'][0]['url'] }}"
                                                                         type="video/mp4">
                                                                     Your browser does not support the video tag.

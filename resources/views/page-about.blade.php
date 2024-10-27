@@ -46,7 +46,7 @@
             Our mission is to simplify the process of designing and programming by offering a comprehensive range of services tailored to meet the diverse needs of our clients. Through user-friendly platforms, innovative tools, and expert guidance                </p>
       </div>
       </div>
-          <!-- Services items -->
+          {{-- <!-- Services items -->
           <div class="row gap-row">
               <!--service item-->
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
@@ -130,7 +130,7 @@
             </div>
 
 
-          </div>
+          </div> --}}
       </div>
   </section>
 

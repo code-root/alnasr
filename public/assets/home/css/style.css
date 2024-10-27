@@ -4250,7 +4250,7 @@ ul.amazing-footer-menu li {
 
 .amazing-portfolio-items>.col-xs-12,
 .amazing-team-detail>.row>div {
-    padding: 0 30px
+    padding: 0px 13px;
 }
 
 .amazing-portfolio-item {

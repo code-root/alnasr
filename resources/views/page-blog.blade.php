@@ -3,6 +3,12 @@
 <!-- Wrapper -->
 <div class="wrapper">
 
+  <style>
+   .ddddd { font-size: 10px;
+    display: flex;
+    margin: 7px;
+   }
+  </style>
   <!-- Onovo Intro -->
   <section class="amazing-section amazing-intro intro--black">
       <div class="container">
@@ -43,8 +49,8 @@
               </a>
             <div class="amazing-overlay"></div></div>
             <div class="desc">
-              <div class="info">
-                <div class="date">{{ $item->updated_at }}</div>{{ $item->category->name ?? '' }}</div>
+              <div class="ddddd">
+             {{ $item->updated_at }} {{ $item->category->name ?? '' }}</div>
               <h5 class="title">
                 <a href="blog-detail/{{  $item->name }}">
                   <span>{{  $item->name }}</span>
@@ -52,7 +58,7 @@
               </h5>
               <div class="amazing-text">
                 <div>
-                  <p>{{  $item->title }}<br>
+                  {{-- <p>{{  $item->title }}<br> --}}
                     <a href="blog-detail/{{  $item->name }}" class="amazing-btn amazing-hover-btn">
                       <span>Read more</span>
                     </a>
